@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ev-widget-post\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-04 18:33-0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Erick Vanegas <eveevansml@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post\n"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:18
+msgid "Show posts from a category"
+msgstr "Mostrar entradas de una categoria"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:83
+msgid "See more "
+msgstr "Ver más "
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:153
+msgid "Title:"
+msgstr "Título"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:158
+msgid "Category:"
+msgstr "Categoría:"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:168
+msgid "Order by:"
+msgstr "Ordenados por: "
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:170
+msgid "Date"
+msgstr "Fecha"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:171
+msgid "Modified"
+msgstr "Modificado"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:172
+msgid "Random"
+msgstr "Aleatorio"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:180
+msgid "Main post format"
+msgstr "Formato principal"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:183
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:214
+msgid "How many post?:"
+msgstr "Cuantas entradas?"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:189
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:220
+msgid "Show excerpt "
+msgstr "Mostrar extracto"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:193
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:224
+msgid "Show thumbnail "
+msgstr "Mostrar miniatura"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:198
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:229
+msgid "Thumbnail size:"
+msgstr "Tamaño de la miniatura: "
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:200
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:231
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:201
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:232
+msgid "Medium"
+msgstr "Mediano"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:202
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:233
+msgid "Large"
+msgstr "Grande"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:211
+msgid "Secondary post format"
+msgstr "Formato  secundario"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:245
+msgid "Enable secondary format"
+msgstr "Habilitar formato secundario"
+
+#: /var/www/inac.gob.ni/wp-content/plugins/ev-widget-post/ev-widget-post.php:249
+msgid "Show *See More* link "
+msgstr "Mostrar enlace \"Ver más\""
+
+#~ msgid "Title"
+#~ msgstr "Título"
+#~ msgid "Size of thumbnail:"
+#~ msgstr "Tamaños de las miniaturas"
+

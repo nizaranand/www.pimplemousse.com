@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.pimplemousse.com/wp-content/plugins/bwp-google-xml-sitemaps/xsl/bwp-sitemapindex.xsl"?>
+
+<sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+	http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<sitemap>
+		<loc>http://www.pimplemousse.com/site.xml</loc>
+		<lastmod>2012-10-31T10:51:12+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/post.xml</loc>
+		<lastmod>2012-10-31T10:51:12+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/post_portfolio.xml</loc>
+		<lastmod>2011-10-26T13:12:09+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/page.xml</loc>
+		<lastmod>2012-04-11T14:08:33+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/taxonomy_category.xml</loc>
+		<lastmod>2012-10-31T08:51:12+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/taxonomy_post_tag.xml</loc>
+		<lastmod>2012-10-31T08:51:12+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://www.pimplemousse.com/author.xml</loc>
+		<lastmod>2012-10-29T22:57:52+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
+
+<!-- This sitemap was originally generated in 0,708 second(s) (Memory usage: 14,54 MB) - 2 queries - 7 URL(s) listed -->

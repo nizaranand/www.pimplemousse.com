@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PIMPlemousse</title>
+	<atom:link href="http://www.pimplemousse.com/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.pimplemousse.com</link>
+	<description>Webzine culture, musique, séries TV, cinéma, tech &#38; sports</description>
+	<lastBuildDate>Wed, 31 Oct 2012 10:51:12 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.4.2</generator>
+		<item>
+		<title>Launch Center Pro, le couteau suisse d&#8217;iOS</title>
+		<link>http://www.pimplemousse.com/app-du-moment/launch-center-pro-le-couteau-suisse-dios</link>
+		<comments>http://www.pimplemousse.com/app-du-moment/launch-center-pro-le-couteau-suisse-dios#comments</comments>
+		<pubDate>Wed, 31 Oct 2012 10:51:12 +0000</pubDate>
+		<dc:creator>Lionel Rudaz</dc:creator>
+				<category><![CDATA[App du moment]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6681</guid>
+		<description><![CDATA[iOS a beau être le système d&#8217;exploitation le plus perfectionné et le plus robuste sur plateforme mobile, il commence néanmoins à ressentir le poids des années. Avec des centaines d&#8217;applications par terminal, des dizaines de contacts et de multiples moyens de communiquer, il devient de plus en plus difficile d&#8217;effectuer des actions rapides sur votre [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/app-du-moment/launch-center-pro-le-couteau-suisse-dios/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Suit up!</title>
+		<link>http://www.pimplemousse.com/series-tv/suit-up-2</link>
+		<comments>http://www.pimplemousse.com/series-tv/suit-up-2#comments</comments>
+		<pubDate>Wed, 31 Oct 2012 09:58:20 +0000</pubDate>
+		<dc:creator>Lionel Rudaz</dc:creator>
+				<category><![CDATA[Séries TV]]></category>
+		<category><![CDATA[Drama]]></category>
+		<category><![CDATA[Gabriel Macht]]></category>
+		<category><![CDATA[Patrick J Adams]]></category>
+		<category><![CDATA[Suits]]></category>
+		<category><![CDATA[USA Network]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6758</guid>
+		<description><![CDATA[Difficile dans cet amas de programmes TV de dénicher les pépites du petit écran, le digne successeur de Desperate Housewives, Lost ou des Sopranos. Entre les séries aux débuts excitants qui se révèlent insipides et les annulations, j&#8217;avoue réfléchir longtemps avant de me lancer dans un pilote. Mais il y a des exceptions. Suits en [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/series-tv/suit-up-2/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Andy Burrows &#8211; Because I Know That I Can</title>
+		<link>http://www.pimplemousse.com/en-passant/andy-burrows-because-i-know-that-i-can</link>
+		<comments>http://www.pimplemousse.com/en-passant/andy-burrows-because-i-know-that-i-can#comments</comments>
+		<pubDate>Wed, 31 Oct 2012 07:42:04 +0000</pubDate>
+		<dc:creator>Static</dc:creator>
+				<category><![CDATA[En passant...]]></category>
+		<category><![CDATA[Andy Burrows]]></category>
+		<category><![CDATA[company]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6786</guid>
+		<description><![CDATA[Andy Burrows c&#8217;est ce mec qui a fait partie de Razor Light ou encore de We Are Scientists, mais il a fallu qu&#8217;il rencontre Mark Ronson pour qu&#8217;il se lance dans un projet solo. Voici un extrait de son album &#171;&#160;Company&#160;&#187;, qui est disponible depuis quelques jours. &#160; &#160;]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/en-passant/andy-burrows-because-i-know-that-i-can/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Les installations déroutantes de Mark Jenkins</title>
+		<link>http://www.pimplemousse.com/hobbies/les-installations-deroutantes-de-mark-jenkins</link>
+		<comments>http://www.pimplemousse.com/hobbies/les-installations-deroutantes-de-mark-jenkins#comments</comments>
+		<pubDate>Tue, 30 Oct 2012 07:28:44 +0000</pubDate>
+		<dc:creator>Static</dc:creator>
+				<category><![CDATA[Hobbies]]></category>
+		<category><![CDATA[mark jenkins]]></category>
+		<category><![CDATA[Street Art]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6773</guid>
+		<description><![CDATA[Un homme allongé dans le coin d&#8217;une gallerie d&#8217;art, un corps qui flotte au-dessus d&#8217;un canal surplombé de ballons d’hélium, un clochard sans visage&#8230; Ce ne sont que quelques exemples de mise en scène faites par cet artiste américain de 42 ans, toujours dans des lieux publics. Le moins qu&#8217;on puisse dire c&#8217;est que cette [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/hobbies/les-installations-deroutantes-de-mark-jenkins/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Naive New Beaters &#8211; La Onda</title>
+		<link>http://www.pimplemousse.com/musique/naive-new-beaters-la-onda</link>
+		<comments>http://www.pimplemousse.com/musique/naive-new-beaters-la-onda#comments</comments>
+		<pubDate>Mon, 29 Oct 2012 15:23:27 +0000</pubDate>
+		<dc:creator>The Dodô_Ône</dc:creator>
+				<category><![CDATA[Musique]]></category>
+		<category><![CDATA[La Onda]]></category>
+		<category><![CDATA[Naive New Beaters]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6747</guid>
+		<description><![CDATA[Une bonne vidéo en qualité VHS pour &#171;&#160;La Onda&#160;&#187; des Naïve New Beaters &#8230; WTF ?! Ces mecs sont des grands malades : on adore ! Stat&#8217; nous proposait justement &#171;&#160;La Onda&#160;&#187; dans sa playlist &#171;&#160;47mn de bon son&#160;&#187; , il fallait donc proposer la vidéo quand c&#8217;est encore tout chaud sorti du four. Et [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/musique/naive-new-beaters-la-onda/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Music Monday n°01</title>
+		<link>http://www.pimplemousse.com/musique/music-monday-01</link>
+		<comments>http://www.pimplemousse.com/musique/music-monday-01#comments</comments>
+		<pubDate>Mon, 29 Oct 2012 10:22:45 +0000</pubDate>
+		<dc:creator>The Dodô_Ône</dc:creator>
+				<category><![CDATA[Musique]]></category>
+		<category><![CDATA[Calvin Harris]]></category>
+		<category><![CDATA[Cody Chesnutt]]></category>
+		<category><![CDATA[Disiz]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6705</guid>
+		<description><![CDATA[Désormais, chaque lundi, je vais reprendre la tradition twitteresque du &#171;&#160;Music Monday&#160;&#187; à la sauce PIMPlemousse ! Je vous proposerai les sorties Spotify de la semaine qui, selon moi, (et avant écoute) méritent notre attention &#8230; Calvin Harris &#8211; 18 Months On connait déjà (par coeur) la moitié des titres de ce troisième album avant [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/musique/music-monday-01/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Dan Croll &#8211; From Nowhere</title>
+		<link>http://www.pimplemousse.com/musique/dan-croll-from-nowhere</link>
+		<comments>http://www.pimplemousse.com/musique/dan-croll-from-nowhere#comments</comments>
+		<pubDate>Fri, 26 Oct 2012 16:08:40 +0000</pubDate>
+		<dc:creator>The Dodô_Ône</dc:creator>
+				<category><![CDATA[Musique]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6644</guid>
+		<description><![CDATA[Parfois quelqu&#8217;un vous glisse, par un vendredi après-midi pluvieux, une petite perle dans votre timeline Twitter. Je connais rien de ce Dan Croll mais j&#8217;ai tout de suite accroché. Alors je sais que sur ce même réseau, on me crierait au #OLD (4 septembre &#8230; de CETTE année) mais sur PIMP on n&#8217;est pas comme [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/musique/dan-croll-from-nowhere/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>P.O.S &#8211; Get Down</title>
+		<link>http://www.pimplemousse.com/musique/p-o-s-get-down</link>
+		<comments>http://www.pimplemousse.com/musique/p-o-s-get-down#comments</comments>
+		<pubDate>Fri, 26 Oct 2012 14:50:26 +0000</pubDate>
+		<dc:creator>The Dodô_Ône</dc:creator>
+				<category><![CDATA[Musique]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6635</guid>
+		<description><![CDATA[Kendrick Lamar par-ci &#8230; Kendrick Lamar par-là &#8230; Ca va il y a pas que lui cette année et ces derniers temps, il y a P.O.S (Stefon Alexander) aussi ! Encore une sortie du label Rhymesayers (Brother Ali, Grieves, Atmosphere &#8230;) qui va passer complètement inaperçue pour le plus grand nombre et c&#8217;est bien dommage &#8230; En [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/musique/p-o-s-get-down/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>47 minutes de bon son!</title>
+		<link>http://www.pimplemousse.com/playlist-de-la-semaine/47-minutes-de-bon-son</link>
+		<comments>http://www.pimplemousse.com/playlist-de-la-semaine/47-minutes-de-bon-son#comments</comments>
+		<pubDate>Fri, 26 Oct 2012 09:36:12 +0000</pubDate>
+		<dc:creator>Static</dc:creator>
+				<category><![CDATA[Playlist de la semaine]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6627</guid>
+		<description><![CDATA[47 minutes de bon son, voilà ce qu&#8217;on vous propose en cette fin de mois d&#8217;octobre. 12 nouveautés encore fumantes qui comme d&#8217;habitude couvrent plusieurs genres musicaux, mais toujours estampillés par le label PIMPlemousse! Plus de détails en ce qui concerne la playlist? Lisez ci-dessous. &#160; TRACKLIST Aloan &#8211; Spit It and Rewind Les albums [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/playlist-de-la-semaine/47-minutes-de-bon-son/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Major Lazer &#8211; Jah No Partial</title>
+		<link>http://www.pimplemousse.com/en-passant/major-lazer-jah-no-partial</link>
+		<comments>http://www.pimplemousse.com/en-passant/major-lazer-jah-no-partial#comments</comments>
+		<pubDate>Wed, 24 Oct 2012 11:52:23 +0000</pubDate>
+		<dc:creator>Static</dc:creator>
+				<category><![CDATA[En passant...]]></category>
+		<category><![CDATA[flux pavillon]]></category>
+		<category><![CDATA[major lazer]]></category>
+
+		<guid isPermaLink="false">http://www.pimplemousse.com/?p=6620</guid>
+		<description><![CDATA[&#171;&#160;Jah No Partial&#160;&#187; est le deuxième single du nouvel album de Major Lazer à venir en février 2013. Cette fois-ci on retrouve Flux Pavillon en featuring et les samples d&#8217;un titre de la légende du reggae; monsieur Johnny Osbourne. Personnellement, je suis beaucoup moins fan de ce single que le &#171;&#160;Get Free&#160;&#187; qui l&#8217;a précédé. [...]]]></description>
+		<wfw:commentRss>http://www.pimplemousse.com/en-passant/major-lazer-jah-no-partial/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk: basic
+Page Caching using disk: enhanced
+
+Served from: www.pimplemousse.com @ 2012-10-31 12:51:45 -->

@@ -1,0 +1,137 @@
+.meanthemes_admin .advice {
+background: #ecf7f8; 
+border: 1px solid #cdebed;
+padding: 0.75em;
+border-radius: 3px;
+margin: 0;
+}
+.meanthemes_admin div.advice {
+background: #e8ffe2;
+border: 1px solid #6fdf51;
+border-radius: 3px;
+margin-top: 1.25em;
+}
+.meanthemes_admin div.advice.oops {
+background: #ffe2e2;
+border: 1px solid #ff8a8a;
+}
+.meanthemes_admin div.advice ul {
+padding: 0;
+margin: 0.5em 0 0.5em 1em;
+}
+.meanthemes_admin div.advice ul li {
+list-style-type: disc;
+margin: 0 0 0 1em;
+}
+.meanthemes_admin p.advice.pdf {
+background: #fbecdf;
+border: 1px solid #fdd1aa;
+border-radius: 3px;
+margin-top: 1.25em;
+}
+.meanthemes_admin .advice strong {
+font-size: 110%;
+}
+.meanthemes_admin p.advice.top {
+background: none;
+border: none;
+padding: 0 0.75em;
+}
+.meanthemes_admin p.advice.mini {
+padding: 0 0.25em;
+margin: 0;
+background: none;
+color: #0d78b6;
+font-style: oblique;
+border: none;
+}
+.meanthemes_admin p.advice a {
+color: #41959f;
+text-decoration: underline;
+-o-transition: color 0.25s ease-in;
+-webkit-transition: color 0.25s ease-in;
+-moz-transition: color 0.25s ease-in;
+transition: color 0.25s ease-in;
+}
+.meanthemes_admin p.advice.pdf a {
+color: #cc460b;
+} 
+.meanthemes_admin p.advice a:hover {
+color: #000;
+text-decoration: underline;
+-o-transition: color 0.25s ease-in;
+-webkit-transition: color 0.25s ease-in;
+-moz-transition: color 0.25s ease-in;
+transition: color 0.25s ease-in;
+}
+.meanthemes_admin .wrap h2 {
+font-size: 28px !important;
+}
+.meanthemes_admin h3 {
+font-size: 24px;
+font-weight: 400;
+border-top: 1px solid #ccc;
+padding-top: 1em;
+padding-left: 0.25em;
+margin-bottom: 0.75em;
+}
+.meanthemes_admin h3:first-of-type {
+border-top:none;
+padding-top: 0;
+}
+.meanthemes_admin input.med-text {
+width: 61%;
+}
+.meanthemes_admin textarea.med-text {
+width: 81%;
+height: 200px;
+}
+.meanthemes_admin textarea.med-text.mini {
+width: 61%;
+height: 30px;
+resize: none;
+}
+.meanthemes_admin textarea.med-text.mini:focus {
+box-shadow: none;
+outline: none;
+}
+.meanthemes_admin .meanthemes-reset,
+.meanthemes_admin .meanthemes-reset p,
+.meanthemes_admin .meanthemes-reset input {
+float: left;
+}
+.meanthemes_admin .meanthemes-reset p {
+line-height: 24px;
+}
+.meanthemes_admin .icon32 {
+background: url(img/meanthemes-32.png) 0 0 no-repeat !important;
+}
+.swatch {
+float: left;
+height: 15px;
+width: 15px;
+margin: 2px 7px 0 0;
+display: block;
+border: 3px solid #fff;
+box-shadow: 0 0 1px #444;
+}
+.meanthemes_admin .meanthemes-palette {
+text-align: center;
+width: 210px;
+float: left;
+z-index: 2;
+position: relative;
+background: #fff;
+}
+.meanthemes_admin .meanthemes-palette.first {
+margin-left: -220px;
+}
+.meanthemes-palette img {
+clear: both;
+border: 1px solid #efefef;
+padding: 2px;
+}
+.meanthemes-palette input {
+margin-right: 10px;
+}
+

@@ -1,0 +1,204 @@
+div.spotify{
+	color:#FFFFFF;
+	margin:0px;
+	padding: 15px;
+	padding-bottom:10px;
+	clear:both;
+	overflow:hidden;
+	font-family: 'segoe ui','lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size:14px;
+	background: -webkit-gradient(linear, center top, center bottom, from(#111111), to(#333333));
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border: 1px solid #000; 
+}
+div.spotify p,div.spotify img{
+	margin:0px !important;
+	padding:0px !important;
+}
+div.spotify img{
+	margin-top:10px !important;
+	float:right;
+}
+div.spotify ul{
+	margin:0px !important;
+	list-style:none;
+	margin-top:-10px;
+}
+
+div.spotify ul li.track{
+	color:#FFFFFF;
+	font-size:11px;
+	display:block;
+	clear:both;
+	margin:0px !important;
+	list-style:none;
+	overflow:hidden;
+	width:100%;
+	cursor:default;
+	padding:0px;
+}
+div.spotify ul li.track:nth-child(even){
+	background-color:#313131;
+}
+
+div.spotify ul li.track:nth-child(odd){
+	background-color:#373737;
+}
+
+div.spotify ul li.track:hover{
+	background-color:#232323;
+}
+div.spotify ul li.track ul{
+	list-style:none;
+	margin:0px !important;
+	padding:0px;
+}
+div.spotify ul li.track ul li{
+	list-style:none;
+	overflow:hidden;
+	float:left;
+	display:inline-block;
+	margin:0px;
+	text-shadow: 1px 1px 1px #222 !important;
+	text-decoration:none !important;
+	white-space:nowrap !important;
+	text-overflow: ellipsis !important;
+	-o-text-overflow: ellipsis !important;
+	-icab-text-overflow: ellipsis !important;
+	-khtml-text-overflow: ellipsis !important;
+	-moz-text-overflow: ellipsis !important;
+	-webkit-text-overflow: ellipsis !important;
+}
+div.spotify ul li.track ul li.share{
+	width:2%;
+	padding-left:1%;
+	padding-right:0.5%;
+	padding-top:3px;
+}
+div.spotify ul li.track ul li.share img{
+	margin:0px !important;
+}
+div.spotify ul li.track ul li.tracktitle{
+	width:40%;
+}
+div.spotify ul li.track ul li.artistname{
+	width:26.5%;
+}
+div.spotify ul li.track ul li.albumtitle{
+	width:30%;
+}
+div.spotify div.albumcover{
+	float:left;
+	width:100px;
+}
+div.spotify div.albumcover a img{
+	border:0px none !important;
+	width:90px;
+	margin:0px !important;
+}
+
+
+div.spotify div.trackinfo{
+	padding-left:5px;
+	padding-right:10px;
+	overflow:hidden;
+}
+
+div.spotify div.meta{
+	position:relative;
+	z-index:3;
+	float:right;
+	width:64px;
+	height:90px;
+}
+span.credits{
+	text-shadow: 1px 1px 1px #000;
+	font-size:11px;
+	color:#444444;
+	margin-left:1px;
+	font-family: 'segoe ui','lucida grande', tahoma, verdana, arial, sans-serif;
+}
+a.credits{
+	margin-left:4px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-family: 'segoe ui','lucida grande', tahoma, verdana, arial, sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	text-decoration:none !important;
+}
+a.credits:hover{
+	text-decoration:underline !important;
+}
+div.spotify div.meta a.play{
+	background:url('img/play.png');
+	background-size:64px 64px;
+    width: 64px;
+    height: 64px;
+    display: block;
+	text-decoration:none;
+	margin-bottom:24px;
+}
+div.spotify div.meta a.play:hover {
+    opacity: 0.75;
+}
+div.spotify div.meta a.play:active {
+    position: relative;
+    top: 1px;
+    opacity: 0.75;
+}
+div.spotify a{
+	display:inline-block;
+	float:left;
+}
+div.spotify a.stylish{
+	display:inline-block;
+	font-family: 'segoe ui','lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size:14px;
+	line-height:24px;
+	width:100%;
+	margin-bottom:5px;
+	float:left;
+	color:#CCCCCC;
+	text-shadow: 1px 1px 1px #000;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-icab-text-overflow: ellipsis;
+	-khtml-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+div.spotify a.stylish span{
+	width:30px;
+	height:24px;
+	float:left;
+}
+div.spotify div.trackinfo a#track{
+	margin-top:-6px;
+	font-size:22px;
+	line-height:24px;
+	color:#FFFFFF;
+}
+div.spotify div.trackinfo a#artist{
+	background:url('img/artist.png') no-repeat left top;
+	height:24px;
+}
+div.spotify div.trackinfo a#album{
+	background:url('img/album.png') no-repeat left top;
+	height:24px;
+}
+div.spotify iframe{
+	border:none;
+	overflow:hidden;
+	background-color:transparent;
+	width:100%;
+	float:left;
+	clear:right;
+	height:24px;
+	display:none;
+	margin-top:10px;
+	position:relative;
+	z-index:2;
+}

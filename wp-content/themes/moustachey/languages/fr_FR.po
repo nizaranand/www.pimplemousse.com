@@ -1,0 +1,1461 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Moustachey\n"
+"POT-Creation-Date: 2012-11-11 17:19+0100\n"
+"PO-Revision-Date: 2012-12-02 20:33+0100\n"
+"Last-Translator: Lionel Rudaz <lionel.rudaz@gmail.com>\n"
+"Language-Team: MeanThemes <themes@meanthemes.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:5
+msgid "We're awfully sorry! We cannot find that page"
+msgstr "Nous sommes vraiment désolés! Nous ne trouvons pas cette page."
+
+#: ../404.php:8
+msgid ""
+"Sorry, we can't find that page, please try clicking on the navigation above."
+msgstr ""
+"Désolé, nous ne trouvons pas cette page. Veuillez cliquer dans le menu ci-"
+"dessus."
+
+#: ../archive.php:13
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Archives quotidiennes: <span>%s</span>"
+
+#: ../archive.php:15
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Archives mensuelles: <span>%s</span>"
+
+#: ../archive.php:17
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Archives annuelles: <span>%s</span>"
+
+#: ../archive.php:19
+msgid "Archives: "
+msgstr "Catégorie: "
+
+#: ../archive.php:47 ../index.php:39 ../page-blog.php:51
+msgid "&lt; Previous"
+msgstr "&lt; Précédent"
+
+#: ../archive.php:48 ../index.php:40 ../page-blog.php:52 ../single.php:296
+msgid "Next &gt;"
+msgstr "Suivant &gt;"
+
+#: ../comments.php:4
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Cet article est protégé par mot de passe. Entrez le mot de passe pour voir "
+"les commentaires."
+
+#: ../comments.php:11
+msgid "Comments"
+msgstr "Commentaires"
+
+#: ../comments.php:16 ../comments.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Anciens commentaires"
+
+#: ../comments.php:17 ../comments.php:26
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Commentaires récents <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../comments.php:30
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: ../comments.php:34
+msgid "Leave a comment"
+msgstr "Laissez un commentaire"
+
+#: ../footer.php:28
+msgid "Loading tweets..."
+msgstr "Chargement des tweets..."
+
+#: ../footer.php:55
+msgid "Contact us by email"
+msgstr "Contactez-nous par e-mail"
+
+#: ../footer.php:56
+msgid "&copy;"
+msgstr ""
+
+#: ../footer.php:71 ../framework/meanthemes.php:338
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../footer.php:74 ../framework/meanthemes.php:339
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../footer.php:77 ../framework/meanthemes.php:341
+msgid "Google +"
+msgstr ""
+
+#: ../footer.php:80 ../framework/meanthemes.php:340
+msgid "Linked In"
+msgstr ""
+
+#: ../footer.php:83 ../framework/meanthemes.php:343
+msgid "Vimeo"
+msgstr ""
+
+#: ../footer.php:86 ../framework/meanthemes.php:344
+msgid "YouTube"
+msgstr ""
+
+#: ../footer.php:89 ../framework/meanthemes.php:345
+msgid "Pinterest"
+msgstr ""
+
+#: ../footer.php:92 ../framework/meanthemes.php:342
+msgid "Zerply"
+msgstr ""
+
+#: ../footer.php:95 ../framework/meanthemes.php:346
+msgid "Dribbble"
+msgstr ""
+
+#: ../footer.php:98 ../framework/meanthemes.php:347
+msgid "Github"
+msgstr ""
+
+#: ../format-audio.php:14 ../format-chat.php:20 ../format-chat.php:44
+#: ../format-gallery.php:53 ../format-image.php:21 ../format-standard.php:17
+#: ../format-standard.php:43 ../format-video.php:18 ../loop-search.php:24
+#: ../loop-search.php:50 ../loop.php:26 ../loop.php:52 ../single.php:34
+#: ../single.php:101 ../single.php:133 ../single.php:160 ../single.php:190
+#: ../single.php:206 ../single.php:234 ../single.php:268
+msgid "0 Comments"
+msgstr "0 commentaire"
+
+#: ../format-audio.php:14 ../format-chat.php:20 ../format-chat.php:44
+#: ../format-gallery.php:53 ../format-image.php:21 ../format-standard.php:17
+#: ../format-standard.php:43 ../format-video.php:18 ../loop-search.php:24
+#: ../loop-search.php:50 ../loop.php:26 ../loop.php:52 ../single.php:34
+#: ../single.php:101 ../single.php:133 ../single.php:160 ../single.php:190
+#: ../single.php:206 ../single.php:234 ../single.php:268
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: ../format-audio.php:14 ../format-chat.php:20 ../format-chat.php:44
+#: ../format-gallery.php:53 ../format-image.php:21 ../format-standard.php:17
+#: ../format-standard.php:43 ../format-video.php:18 ../loop-search.php:24
+#: ../loop-search.php:50 ../loop.php:26 ../loop.php:52 ../single.php:34
+#: ../single.php:101 ../single.php:133 ../single.php:160 ../single.php:190
+#: ../single.php:206 ../single.php:234 ../single.php:268
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: ../format-audio.php:14 ../format-chat.php:20 ../format-chat.php:44
+#: ../format-gallery.php:53 ../format-image.php:21 ../format-standard.php:17
+#: ../format-standard.php:43 ../format-video.php:18 ../loop-search.php:24
+#: ../loop-search.php:50 ../loop.php:26 ../loop.php:52 ../single.php:33
+#: ../single.php:100 ../single.php:132 ../single.php:159 ../single.php:189
+#: ../single.php:205 ../single.php:233 ../single.php:267
+msgid " | "
+msgstr ""
+
+#: ../functions.php:43
+msgid "Archive Widget Area"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Page Widget Area"
+msgstr ""
+
+#: ../functions.php:61
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../functions.php:88
+msgid "Choose a video to display in your sidebar"
+msgstr ""
+
+#: ../functions.php:145
+msgid "Video"
+msgstr "Vidéo"
+
+#: ../functions.php:149
+msgid "Title:"
+msgstr "Titre:"
+
+#: ../functions.php:153
+msgid "Insert your embed code here, make sure you set width to 253px:"
+msgstr ""
+"Entrez votre code à inclure ici. Faites attention que la largeur soit de "
+"253px:"
+
+#: ../functions.php:206
+msgid "Post Formats:"
+msgstr "Formats d'article:"
+
+#: ../functions.php:220
+msgid ""
+"To keep things simple, please fill out the following below per post format, "
+"you must ensure you also choose the right post format from the 'Format' "
+"panel for the below to work"
+msgstr ""
+
+#: ../functions.php:221
+msgid "Link Format"
+msgstr "Format de lien"
+
+#: ../functions.php:222
+msgid "URL (Web Address):"
+msgstr ""
+
+#: ../functions.php:223
+msgid "Link text"
+msgstr ""
+
+#: ../functions.php:224
+msgid "Video Format:"
+msgstr ""
+
+#: ../functions.php:225
+msgid "Video Embed Code:"
+msgstr ""
+
+#: ../functions.php:228
+msgid "Audio Format:"
+msgstr "Format audio:"
+
+#: ../functions.php:229
+msgid ""
+"Audio Web Address (URL - you can upload via WordPress and then copy link "
+"into here):"
+msgstr ""
+
+#: ../functions.php:232
+msgid "Quote Format"
+msgstr "Format de citation"
+
+#: ../functions.php:233
+msgid "Source:"
+msgstr "Source:"
+
+#: ../functions.php:276
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de validation."
+
+#: ../functions.php:282
+msgid " at "
+msgstr " à "
+
+#: ../functions.php:282 ../functions.php:297
+msgid "(Edit)"
+msgstr "(Modifier)"
+
+#: ../functions.php:297
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:311
+msgid "Name"
+msgstr "Nom"
+
+#: ../functions.php:312
+msgid "Email"
+msgstr "E-mail"
+
+#: ../functions.php:313
+msgid "Website"
+msgstr "Site Internet"
+
+#: ../functions.php:603
+msgid "1 Third Col. Last"
+msgstr ""
+
+#: ../functions.php:604
+msgid "2 Thirds Col."
+msgstr ""
+
+#: ../functions.php:605
+msgid "2 Thirds Col. Last"
+msgstr ""
+
+#: ../functions.php:606
+msgid "1 Half Col."
+msgstr ""
+
+#: ../functions.php:607
+msgid "1 Half Col. Last"
+msgstr ""
+
+#: ../functions.php:608
+msgid "1 Fourth Col."
+msgstr ""
+
+#: ../functions.php:609
+msgid "1 Fourth Col. Last"
+msgstr ""
+
+#: ../functions.php:610
+msgid "3 Fourths Col."
+msgstr ""
+
+#: ../functions.php:611
+msgid "3 Fourths Col. Last"
+msgstr ""
+
+#: ../functions.php:612
+msgid "1 Fifth Col."
+msgstr ""
+
+#: ../functions.php:613
+msgid "1 Fifth Col. Last"
+msgstr ""
+
+#: ../functions.php:614
+msgid "2 Fifths Col."
+msgstr ""
+
+#: ../functions.php:615
+msgid "2 Fifths Col. Last"
+msgstr ""
+
+#: ../functions.php:616
+msgid "3 Fifths Col."
+msgstr ""
+
+#: ../functions.php:617
+msgid "3 Fifths Col. Last"
+msgstr ""
+
+#: ../functions.php:618
+msgid "4 Fifths Col."
+msgstr ""
+
+#: ../functions.php:619
+msgid "4 Fifths Col. Last"
+msgstr ""
+
+#: ../functions.php:620
+msgid "1 Sixth Col."
+msgstr ""
+
+#: ../functions.php:621
+msgid "1 Sixth Col. Last"
+msgstr ""
+
+#: ../functions.php:622
+msgid "5 Sixths Col."
+msgstr ""
+
+#: ../functions.php:623
+msgid "5 Sixths Col. Last"
+msgstr ""
+
+#: ../functions.php:624
+msgid "Clear"
+msgstr ""
+
+#: ../functions.php:625
+msgid "Status - OK"
+msgstr ""
+
+#: ../functions.php:626
+msgid "Status - Oops"
+msgstr ""
+
+#: ../functions.php:627
+msgid "Status - Less Oops"
+msgstr ""
+
+#: ../functions.php:628
+msgid "More link"
+msgstr ""
+
+#: ../header.php:51
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../header.php:121 ../header.php:136
+msgid "Go to Home"
+msgstr "Aller à l'accueil"
+
+#: ../header.php:155
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: ../loop-search.php:5 ../loop.php:6
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: ../loop-search.php:6 ../loop.php:7
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: ../loop-search.php:78 ../loop.php:80
+msgid "Older posts"
+msgstr "Articles précédents"
+
+#: ../loop-search.php:79 ../loop.php:81
+msgid "Newer posts"
+msgstr "Articles plus récents"
+
+#: ../page-archive.php:28
+msgid "By month"
+msgstr "Par mois"
+
+#: ../page-archive.php:33
+msgid "By year"
+msgstr "Par année"
+
+#: ../page-archive.php:38
+msgid "By category"
+msgstr "Par catégorie"
+
+#: ../page-archive.php:44 ../page-contact.php:216 ../page-fullwidth.php:26
+#: ../page.php:19 ../single.php:286
+msgid "Pages:"
+msgstr ""
+
+#: ../page-contact.php:22
+msgid "Please enter your name."
+msgstr "Veuillez entrer votre nom"
+
+#: ../page-contact.php:28
+msgid "Please enter your email address."
+msgstr "Veuillez entre votre adresse e-mail"
+
+#: ../page-contact.php:31
+msgid "You entered an invalid email address."
+msgstr "Vous avez entré une adresse e-mail invalide"
+
+#: ../page-contact.php:42
+msgid "Please enter a message."
+msgstr "Veuillez entrer votre message."
+
+#: ../page-contact.php:62
+msgid ": Contact Form "
+msgstr " : Formulaire de contact"
+
+#: ../page-contact.php:177
+msgid "Thanks, your email was sent successfully."
+msgstr "Merci, votre e-mail a été envoyé."
+
+#: ../page-contact.php:181
+msgid "Sorry an error occurred, please try again."
+msgstr "Désolé, il y a eu un problème. Pouvez-vous réessayer?"
+
+#: ../page-contact.php:185
+msgid "Name *"
+msgstr "Nom *"
+
+#: ../page-contact.php:191
+msgid "Email *"
+msgstr "E-mail *"
+
+#: ../page-contact.php:197
+msgid "Your Telephone Number"
+msgstr "Votre numéro de téléphone"
+
+#: ../page-contact.php:200
+msgid "Your Enquiry"
+msgstr "Votre message"
+
+#: ../page-contact.php:206
+msgid "Submit"
+msgstr "Envoyer"
+
+#: ../search.php:9
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour: %s"
+
+#: ../search.php:17
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: ../search.php:20
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais aucun résultat n'a été trouvé pour ces critères. Veuillez "
+"réessayer avec des mots-clés différents."
+
+#: ../single.php:295
+msgid "&lt; Prev."
+msgstr "&lt; Précédent."
+
+#: ../framework/meanthemes-defaults-moustachey.php:122
+#: ../framework/meanthemes.php:94 ../framework/meanthemes.php:519
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: ../framework/meanthemes-defaults-moustachey.php:123
+#: ../framework/meanthemes.php:95
+msgid "View post"
+msgstr "Voir l'article"
+
+#: ../framework/meanthemes-defaults-moustachey.php:124
+#: ../framework/meanthemes.php:96
+msgid "Navigation"
+msgstr ""
+
+#: ../framework/meanthemes-defaults-moustachey.php:125
+#: ../framework/meanthemes.php:97
+msgid "Contact us"
+msgstr "Nous contacter"
+
+#: ../framework/meanthemes-defaults-moustachey.php:126
+#: ../framework/meanthemes.php:98
+msgid "+44123 456789"
+msgstr ""
+
+#: ../framework/meanthemes-defaults-moustachey.php:127
+#: ../framework/meanthemes.php:99
+msgid "themes@meanthemes.com"
+msgstr ""
+
+#: ../framework/meanthemes.php:124 ../framework/meanthemes.php:125
+#: ../framework/meanthemes.php:145
+msgid "Theme Options"
+msgstr ""
+
+#: ../framework/meanthemes.php:126
+msgid "General settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:126 ../framework/meanthemes.php:160
+#: ../framework/meanthemes.php:248
+msgid "General Settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:127 ../framework/meanthemes.php:161
+#: ../framework/meanthemes.php:334
+msgid "Social Settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:127
+msgid "Social settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:128
+msgid "Styling &amp; Font Options"
+msgstr ""
+
+#: ../framework/meanthemes.php:129 ../framework/meanthemes.php:515
+msgid "Text/Content Options"
+msgstr ""
+
+#: ../framework/meanthemes.php:162
+msgid "Styling  &amp; Font Options"
+msgstr ""
+
+#: ../framework/meanthemes.php:163
+msgid "Text/Content Settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:168
+msgid "<strong>Getting stuck?</strong> No problem... "
+msgstr ""
+
+#: ../framework/meanthemes.php:168
+msgid "View the Documentation here"
+msgstr ""
+
+#: ../framework/meanthemes.php:187
+msgid ""
+"It looks like you already have the following MeanThemes themes installed: "
+msgstr ""
+
+#: ../framework/meanthemes.php:195
+msgid ""
+"Please note, you will need to copy across any settings from your other "
+"themes, we do not automatically import your settings."
+msgstr ""
+
+#: ../framework/meanthemes.php:227
+msgid "This tab has been reset to default settings, the page will now refresh."
+msgstr ""
+
+#: ../framework/meanthemes.php:227
+msgid "Only click this if you want to reset to defaults for this tab!"
+msgstr ""
+
+#: ../framework/meanthemes.php:250
+msgid "Analytics settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:251
+msgid "Google Analytics ID"
+msgstr ""
+
+#: ../framework/meanthemes.php:253
+msgid "Global settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:254
+msgid "Uppercase all Headings"
+msgstr ""
+
+#: ../framework/meanthemes.php:254 ../framework/meanthemes.php:255
+msgid "Tick to show the strapline under the logo/site heading."
+msgstr ""
+
+#: ../framework/meanthemes.php:255
+msgid "Show Strapline"
+msgstr ""
+
+#: ../framework/meanthemes.php:256
+msgid "Switch Navigation to Left"
+msgstr ""
+
+#: ../framework/meanthemes.php:256
+msgid "Tick to switch the default right navigation to display left."
+msgstr ""
+
+#: ../framework/meanthemes.php:257
+msgid "Turn off Side Navigation / Use Full Width"
+msgstr ""
+
+#: ../framework/meanthemes.php:257
+msgid "Tick to turn off side navigation across the whole theme."
+msgstr ""
+
+#: ../framework/meanthemes.php:257
+msgid "This will make every page and post full width."
+msgstr ""
+
+#: ../framework/meanthemes.php:258
+msgid "Show Top Panel / Donate Reveal"
+msgstr ""
+
+#: ../framework/meanthemes.php:258
+msgid "Tick to show the top panel reveal."
+msgstr ""
+
+#: ../framework/meanthemes.php:261
+msgid "Switch to Boxed layout"
+msgstr ""
+
+#: ../framework/meanthemes.php:261
+msgid ""
+"Tick to show left and right borders, you can control colour through the "
+"Styling tab."
+msgstr ""
+
+#: ../framework/meanthemes.php:262
+msgid "Show Twitter"
+msgstr ""
+
+#: ../framework/meanthemes.php:262
+msgid "Tick to activate the footer twitter feed."
+msgstr ""
+
+#: ../framework/meanthemes.php:263
+msgid "Show Social in Footer"
+msgstr ""
+
+#: ../framework/meanthemes.php:263
+msgid "Tick to activate the social footer section."
+msgstr ""
+
+#: ../framework/meanthemes.php:264
+msgid "Enable Widgets in Footer"
+msgstr ""
+
+#: ../framework/meanthemes.php:264
+msgid "Tick to activate the widgets in footer section."
+msgstr ""
+
+#: ../framework/meanthemes.php:265
+msgid "Use white social icons"
+msgstr ""
+
+#: ../framework/meanthemes.php:265
+msgid "By default, icons are white untick this to use black instead."
+msgstr ""
+
+#: ../framework/meanthemes.php:266
+msgid "Show MeanThemes Footer credit"
+msgstr ""
+
+#: ../framework/meanthemes.php:266
+msgid "Tick to show a footer credit to MeanThemes."
+msgstr ""
+
+#: ../framework/meanthemes.php:268
+msgid "Images"
+msgstr ""
+
+#: ../framework/meanthemes.php:269
+msgid "Plain Text Logo"
+msgstr ""
+
+#: ../framework/meanthemes.php:269
+msgid ""
+"If you'd like us to just use your site name as the logo please tick this."
+msgstr ""
+
+#: ../framework/meanthemes.php:270
+msgid "Logo Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:270
+msgid ""
+"For best results upload your logo with a maximum height of 75px and width of "
+"175px."
+msgstr ""
+
+#: ../framework/meanthemes.php:271
+msgid "Retina Logo Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:271
+msgid ""
+"For best results upload your logo with a maximum height of 150px and width "
+"of 350px. The logo will be resized by half for Retina devices."
+msgstr ""
+
+#: ../framework/meanthemes.php:272
+msgid "Apple Touch Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:272
+msgid "For best results upload a 128x128px .png file."
+msgstr ""
+
+#: ../framework/meanthemes.php:273
+msgid "Favicon Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:273
+msgid "For best results upload 32x32px .png, .ico or .gif file."
+msgstr ""
+
+#: ../framework/meanthemes.php:275
+msgid "Swatch Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:275
+msgid "For best results upload a file that repeats on X and Y axis."
+msgstr ""
+
+#: ../framework/meanthemes.php:278
+msgid "Contact page settings"
+msgstr ""
+
+#: ../framework/meanthemes.php:279
+msgid "Contact Form Email Address"
+msgstr ""
+
+#: ../framework/meanthemes.php:280
+msgid "Google API Key"
+msgstr ""
+
+#: ../framework/meanthemes.php:281
+msgid "Google Maps Latitude &amp; Longitude"
+msgstr ""
+
+#: ../framework/meanthemes.php:282
+msgid "Google Pin Upload"
+msgstr ""
+
+#: ../framework/meanthemes.php:282
+msgid ""
+"For best results upload your pin with a maximum width of 30px x 30px .png "
+"file."
+msgstr ""
+
+#: ../framework/meanthemes.php:283
+msgid "Show Contact Form"
+msgstr ""
+
+#: ../framework/meanthemes.php:283
+msgid "Tick to activate Contact Form on Contact template."
+msgstr ""
+
+#: ../framework/meanthemes.php:298
+msgid ""
+"This tab holds the general settings for the website and is divided into the "
+"sections for ease of navigation."
+msgstr ""
+
+#: ../framework/meanthemes.php:303
+msgid ""
+"If you use Google Analytics, insert your ID below and we will do the rest "
+"for you. Your analytics ID should look like this: UA-XXXXXXXX-X with X "
+"representing numbers."
+msgstr ""
+
+#: ../framework/meanthemes.php:307
+msgid "Change settings specifically for the contact page."
+msgstr ""
+
+#: ../framework/meanthemes.php:312
+msgid ""
+"Upload your website logo, Apple Touch icon and Favicon. If you'd like to "
+"crop or resize your images after they have uploaded, head over to the \"Media"
+"\" area where you can crop your images, make sure you come back here though "
+"and reselect your newly cropped image and click Save at the bottom."
+msgstr ""
+
+#: ../framework/meanthemes.php:317
+msgid "Global settings, these effect the whole website."
+msgstr ""
+
+#: ../framework/meanthemes.php:361
+msgid ""
+"Please fill in the full URL (web address) of the social networks you would "
+"like to display."
+msgstr ""
+
+#: ../framework/meanthemes.php:378
+msgid "Colours"
+msgstr ""
+
+#: ../framework/meanthemes.php:380
+msgid "Plain Text Logo Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:381
+msgid "Heading Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:382
+msgid "Content Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:383
+msgid "Content Link Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:384
+msgid "Content Link Hover Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:385
+msgid "Background Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:386
+msgid "Content Background Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:387
+msgid "Footer Background Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:388
+msgid "Colour for Footer text"
+msgstr ""
+
+#: ../framework/meanthemes.php:389
+msgid "Button Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:390
+msgid "Button Hover Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:391
+msgid "Archive / Home Dark Background Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:392
+msgid "Archive / Home Bright Background Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:394
+msgid "On Dark Text Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:395
+msgid "On Bright Text Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:401
+msgid "Google Map Road Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:402
+msgid "Mobile Menu Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:404
+msgid "Default Web fonts"
+msgstr ""
+
+#: ../framework/meanthemes.php:406
+msgid "Heading &amp; Text Logo Font"
+msgstr ""
+
+#: ../framework/meanthemes.php:407
+msgid "Content Font"
+msgstr ""
+
+#: ../framework/meanthemes.php:409
+msgid "Google Web fonts"
+msgstr ""
+
+#: ../framework/meanthemes.php:411
+msgid "Google Web font for Headings &amp; Text Logo"
+msgstr ""
+
+#: ../framework/meanthemes.php:413
+msgid "Google Web font for Content"
+msgstr ""
+
+#: ../framework/meanthemes.php:416
+msgid "Typekit Web fonts"
+msgstr ""
+
+#: ../framework/meanthemes.php:418
+msgid "Typekit ID"
+msgstr ""
+
+#: ../framework/meanthemes.php:420
+msgid "Typekit Web font for Headings &amp; Text Logo"
+msgstr ""
+
+#: ../framework/meanthemes.php:421
+msgid "Typekit Web font for Content"
+msgstr ""
+
+#: ../framework/meanthemes.php:424
+msgid "Adobe Edge Web fonts"
+msgstr ""
+
+#: ../framework/meanthemes.php:426
+msgid "Adobe Edge Web font for Headings &amp; Text Logo"
+msgstr ""
+
+#: ../framework/meanthemes.php:429
+msgid "Font Sizes"
+msgstr ""
+
+#: ../framework/meanthemes.php:431
+msgid "Body Font size"
+msgstr ""
+
+#: ../framework/meanthemes.php:432
+msgid "Heading 1"
+msgstr ""
+
+#: ../framework/meanthemes.php:433
+msgid "Heading 2"
+msgstr ""
+
+#: ../framework/meanthemes.php:434
+msgid "Heading 3"
+msgstr ""
+
+#: ../framework/meanthemes.php:435
+msgid "Heading 4"
+msgstr ""
+
+#: ../framework/meanthemes.php:436
+msgid "Heading 5"
+msgstr ""
+
+#: ../framework/meanthemes.php:437
+msgid "Heading 6"
+msgstr ""
+
+#: ../framework/meanthemes.php:438
+msgid "Donate box title size"
+msgstr ""
+
+#: ../framework/meanthemes.php:439
+msgid "Site title size"
+msgstr ""
+
+#: ../framework/meanthemes.php:440
+msgid "Strapline size"
+msgstr ""
+
+#: ../framework/meanthemes.php:445
+msgid "CSS Block"
+msgstr ""
+
+#: ../framework/meanthemes.php:461
+msgid ""
+"You can choose all your styling options for your theme below, many colour "
+"values double up across the theme, we'll provide a list of all elements "
+"affected in each section."
+msgstr ""
+
+#: ../framework/meanthemes.php:466
+msgid "You can configure almost all of the colours in this theme below."
+msgstr ""
+
+#: ../framework/meanthemes.php:471
+msgid ""
+"The below dropdown boxes have a list of the standard web safe font families, "
+"please make sure you choose from one of each, if you decide to use Google "
+"web fonts, these fonts will be superceded by the Google font and will "
+"provide the back up font should the Google web font server be inaccessible."
+msgstr ""
+
+#: ../framework/meanthemes.php:475
+msgid "You can control all the font sizes in the website here."
+msgstr ""
+
+#: ../framework/meanthemes.php:479
+msgid ""
+"If you'd like to use a Google Web font, all you need to do is go to <a href="
+"\"http://www.google.com/webfonts/\" title=\"Visit Google Webfonts (will open "
+"in separate window)\" target=\"_blank\">Google Web fonts</a>, choose the "
+"font you'd like to use and enter the name of the font in the boxes below. "
+"For example: Lato. We'll do the rest. <strong>Please only enter one font per "
+"option.</strong>"
+msgstr ""
+
+#: ../framework/meanthemes.php:484
+msgid ""
+"If you'd like to use a Typekit Web font, visit <a href=\"http://www.typekit."
+"com\" title=\"Visit Typekit (will open in separate window)\" target=\"_blank"
+"\">Typekit.com</a>, choose the font you'd like to use and enter the CSS "
+"attributes Typekit gives you. For example: Museo Sans would be entered as "
+"\"museo-sans-1\",\"museo-sans-2\"."
+msgstr ""
+
+#: ../framework/meanthemes.php:489
+msgid ""
+"If you'd like to use the brand new Adobe Edge Web font, visit <a href="
+"\"http://html.adobe.com/edge/webfonts/\" title=\"Visit Adobe Edge Webkit "
+"(will open in separate window)\" target=\"_blank\">http://html.adobe.com/"
+"edge/webfonts/</a>, choose the font you'd like to use and enter the CSS "
+"attributes Adobe gives you. abril-fatface. Please do not include the semi "
+"colon ( ; ) or the \"serif\" or \"san-serif\"."
+msgstr ""
+
+#: ../framework/meanthemes.php:494
+msgid ""
+"We know our theme is amazing, but we do understand that you may want to add "
+"your own CSS code, well don't worry, add your code below and we'll add it to "
+"the head of the web page after all of the MeanThemes CSS."
+msgstr ""
+
+#: ../framework/meanthemes.php:498
+msgid ""
+"We have pre-made 4 colour palettes for you to use, screen shots of each are "
+"below. Do not worry though, you can still overwrite the theme colours in the "
+"\"Colours\" section underneath."
+msgstr ""
+
+#: ../framework/meanthemes.php:518
+msgid "Global"
+msgstr ""
+
+#: ../framework/meanthemes.php:520
+msgid "View Post"
+msgstr ""
+
+#: ../framework/meanthemes.php:521
+msgid "Sidebar Navigation"
+msgstr ""
+
+#: ../framework/meanthemes.php:523
+msgid "Donate Pull down link"
+msgstr ""
+
+#: ../framework/meanthemes.php:524
+msgid "Donate Title"
+msgstr ""
+
+#: ../framework/meanthemes.php:525
+msgid "Donate Details"
+msgstr ""
+
+#: ../framework/meanthemes.php:526
+msgid "Donate Link URL"
+msgstr ""
+
+#: ../framework/meanthemes.php:527
+msgid "Donate Link Text"
+msgstr ""
+
+#: ../framework/meanthemes.php:530
+msgid "Contact"
+msgstr ""
+
+#: ../framework/meanthemes.php:531
+msgid "Contact Form title"
+msgstr ""
+
+#: ../framework/meanthemes.php:532
+msgid "Contact Email"
+msgstr ""
+
+#: ../framework/meanthemes.php:533
+msgid "Contact Phone"
+msgstr ""
+
+#: ../framework/meanthemes.php:550
+msgid ""
+"This theme uses a number of small text blocks to entitle each section of "
+"content, you can control them here."
+msgstr ""
+
+#: ../framework/meanthemes.php:555
+msgid "The content here will appear on the homepage."
+msgstr ""
+
+#: ../framework/meanthemes.php:560
+msgid "The content here will appear on the portfolio archive page."
+msgstr ""
+
+#: ../framework/meanthemes.php:565
+msgid ""
+"Change the text here for the default \"view post\" text used on the blog "
+"section and \"navigation\" used on the page sidebar."
+msgstr ""
+
+#: ../framework/meanthemes.php:569
+msgid ""
+"The following section shows on the Contact Page template, email and phone "
+"number are shown on the footer."
+msgstr ""
+
+#: ../framework/meanthemes.php:574
+msgid "The following section powers the Footer section on the website."
+msgstr ""
+
+#: ../framework/meanthemes.php:611 ../framework/meanthemes.php:613
+msgid "Select Colour"
+msgstr ""
+
+#: ../framework/meanthemes.php:640
+msgid "Default"
+msgstr ""
+
+#: ../framework/meanthemes.php:642
+msgid "Pink"
+msgstr ""
+
+#: ../framework/meanthemes.php:644
+msgid "Orange"
+msgstr ""
+
+#: ../framework/meanthemes.php:647
+msgid "Green"
+msgstr ""
+
+#: ../framework/meanthemes.php:666
+msgid "Upload / Choose Image"
+msgstr "Uploader / Choisir une image"
+
+#: ../framework/meanthemes.php:698
+msgid "Select Default Font"
+msgstr "Sélectionner la police par défaut"
+
+#: ../framework/meanthemes.php:699
+msgid "Verdana, Geneva, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:700
+msgid "Georgia, \"Times New Roman\", Times, serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:701
+msgid "\"Courier New\", Courier, monospace"
+msgstr ""
+
+#: ../framework/meanthemes.php:703
+msgid "Arial, Helvetica, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:704
+msgid "Helvetica, Arial, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:705
+msgid "Tahoma, Geneva, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:706
+msgid "\"Trebuchet MS\", Arial, Helvetica, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:707
+msgid "\"Arial Black\", Gadget, sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:708
+msgid "\"Times New Roman\", Times, serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:709
+msgid "\"Palatino Linotype\", \"Book Antiqua\", Palatino, serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:710
+msgid "\"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:711
+msgid "\"MS Serif\", \"New York\", serif"
+msgstr ""
+
+#: ../framework/meanthemes.php:712
+msgid "\"Lucida Console\", Monaco, monospace"
+msgstr ""
+
+#: ../framework/meanthemes.php:728
+msgid "Select Font Size"
+msgstr ""
+
+#: ../framework/meanthemes.php:729
+msgid "10px"
+msgstr ""
+
+#: ../framework/meanthemes.php:730
+msgid "11px"
+msgstr ""
+
+#: ../framework/meanthemes.php:731
+msgid "12px"
+msgstr ""
+
+#: ../framework/meanthemes.php:732
+msgid "13px"
+msgstr ""
+
+#: ../framework/meanthemes.php:733
+msgid "14px"
+msgstr ""
+
+#: ../framework/meanthemes.php:734
+msgid "15px"
+msgstr ""
+
+#: ../framework/meanthemes.php:735
+msgid "16px"
+msgstr ""
+
+#: ../framework/meanthemes.php:736
+msgid "17px"
+msgstr ""
+
+#: ../framework/meanthemes.php:737
+msgid "18px"
+msgstr ""
+
+#: ../framework/meanthemes.php:738
+msgid "19px"
+msgstr ""
+
+#: ../framework/meanthemes.php:739
+msgid "20px"
+msgstr ""
+
+#: ../framework/meanthemes.php:740
+msgid "21px"
+msgstr ""
+
+#: ../framework/meanthemes.php:741
+msgid "22px"
+msgstr ""
+
+#: ../framework/meanthemes.php:742
+msgid "23px"
+msgstr ""
+
+#: ../framework/meanthemes.php:743
+msgid "24px"
+msgstr ""
+
+#: ../framework/meanthemes.php:744
+msgid "25px"
+msgstr ""
+
+#: ../framework/meanthemes.php:745
+msgid "26px"
+msgstr ""
+
+#: ../framework/meanthemes.php:746
+msgid "27px"
+msgstr ""
+
+#: ../framework/meanthemes.php:747
+msgid "28px"
+msgstr ""
+
+#: ../framework/meanthemes.php:748
+msgid "29px"
+msgstr ""
+
+#: ../framework/meanthemes.php:749
+msgid "30px"
+msgstr ""
+
+#: ../framework/meanthemes.php:750
+msgid "31px"
+msgstr ""
+
+#: ../framework/meanthemes.php:751
+msgid "32px"
+msgstr ""
+
+#: ../framework/meanthemes.php:752
+msgid "33px"
+msgstr ""
+
+#: ../framework/meanthemes.php:753
+msgid "34px"
+msgstr ""
+
+#: ../framework/meanthemes.php:754
+msgid "35px"
+msgstr ""
+
+#: ../framework/meanthemes.php:755
+msgid "36px"
+msgstr ""
+
+#: ../framework/meanthemes.php:756
+msgid "37px"
+msgstr ""
+
+#: ../framework/meanthemes.php:757
+msgid "38px"
+msgstr ""
+
+#: ../framework/meanthemes.php:758
+msgid "39px"
+msgstr ""
+
+#: ../framework/meanthemes.php:759
+msgid "40px"
+msgstr ""
+
+#: ../framework/meanthemes.php:760
+msgid "41px"
+msgstr ""
+
+#: ../framework/meanthemes.php:761
+msgid "42px"
+msgstr ""
+
+#: ../framework/meanthemes.php:762
+msgid "43px"
+msgstr ""
+
+#: ../framework/meanthemes.php:763
+msgid "44px"
+msgstr ""
+
+#: ../framework/meanthemes.php:764
+msgid "45px"
+msgstr ""
+
+#: ../framework/meanthemes.php:765
+msgid "46px"
+msgstr ""
+
+#: ../framework/meanthemes.php:766
+msgid "47px"
+msgstr ""
+
+#: ../framework/meanthemes.php:767
+msgid "48px"
+msgstr ""
+
+#: ../framework/meanthemes.php:768
+msgid "49px"
+msgstr ""
+
+#: ../framework/meanthemes.php:769
+msgid "50px"
+msgstr ""
+
+#: ../framework/meanthemes.php:770
+msgid "51px"
+msgstr ""
+
+#: ../framework/meanthemes.php:771
+msgid "52px"
+msgstr ""
+
+#: ../framework/meanthemes.php:772
+msgid "53px"
+msgstr ""
+
+#: ../framework/meanthemes.php:773
+msgid "54px"
+msgstr ""
+
+#: ../framework/meanthemes.php:774
+msgid "55px"
+msgstr ""
+
+#: ../framework/meanthemes.php:775
+msgid "56px"
+msgstr ""
+
+#: ../framework/meanthemes.php:776
+msgid "57px"
+msgstr ""
+
+#: ../framework/meanthemes.php:777
+msgid "58px"
+msgstr ""
+
+#: ../framework/meanthemes.php:778
+msgid "59px"
+msgstr ""
+
+#: ../framework/meanthemes.php:779
+msgid "60px"
+msgstr ""
+
+#: ../framework/meanthemes.php:780
+msgid "61px"
+msgstr ""
+
+#: ../framework/meanthemes.php:781
+msgid "62px"
+msgstr ""
+
+#: ../framework/meanthemes.php:782
+msgid "63px"
+msgstr ""
+
+#: ../framework/meanthemes.php:783
+msgid "64px"
+msgstr ""
+
+#: ../framework/meanthemes.php:784
+msgid "65px"
+msgstr ""
+
+#: ../framework/meanthemes.php:785
+msgid "66px"
+msgstr ""
+
+#: ../framework/meanthemes.php:786
+msgid "67px"
+msgstr ""
+
+#: ../framework/meanthemes.php:787
+msgid "68px"
+msgstr ""
+
+#: ../framework/meanthemes.php:788
+msgid "69px"
+msgstr ""
+
+#: ../framework/meanthemes.php:789
+msgid "70px"
+msgstr ""

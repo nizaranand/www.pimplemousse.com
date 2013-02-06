@@ -1,0 +1,90 @@
+.post-about-author {
+  border-bottom: 1px solid #EAEAEA;
+  background: #2C2C2C;
+  padding: 20px 35px 20px 35px;
+  text-align: left;
+}
+
+.post-author-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.recent-comment {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recent-comment a {
+  border-bottom: none !important;
+  margin: none !important;
+  padding: 0 10px 4px 0px !important;
+}
+
+.recent-comment-author {
+  background: none !important;
+  padding-right: 0px !important;    
+}
+
+.oneall_social_login {
+  padding-left: 35px !important;
+  text-align: left; 
+}
+
+.oneall_social_login label {
+  margin-left: 0px !important;
+}
+
+.comment-notes {
+  text-align: left;
+  padding: 0px 35px 0px 35px !important;
+}
+
+.comment-form-author, .comment-form-email, .comment-form-url, .comment-form-comment {
+  text-align: left;
+  padding: 0px 35px 0px 35px !important;
+}
+
+.comment-form-comment textarea {
+  width: 95%;
+}
+
+.form-allowed-tags {
+  display: none;
+}
+
+.albumInfosWrapper {
+    padding: 0px;
+    border-bottom: 1px solid #EAEAEA;
+    background: #EAEAEA;
+}
+
+.albumCover, .albumInfosRight {
+    float: left;
+    text-align: left;
+}
+
+.albumCover {
+    width: 250px;
+    padding: 35px;
+}
+
+.albumInfosRight {
+    width: 338px;
+}
+
+.albumInfos {
+    padding: 35px 35px 0px 0px;
+}
+
+.albumLinks {
+    padding: 10px 35px 35px 0px;  
+}
+
+.comment-system {
+  padding: 35px;
+  width: 588px !important;
+}
+
+.navigation a:hover {
+  color: white !important;
+}
