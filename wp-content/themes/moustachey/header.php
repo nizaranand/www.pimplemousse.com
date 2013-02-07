@@ -3,20 +3,20 @@
 <?php $styling_options = get_option( 'meanthemes_theme_styling_options_moustachey'); ?>
 <?php $content_options = get_option ( 'meanthemes_theme_content_options_moustachey' ); ?>
 <?php 
-if($general_options[ 'switch_nav' ] ) {
+if( (isset($general_options[ 'switch_nav' ])) && ($general_options[ 'switch_nav' ])) {
 	$switchNav = " left";
 } else {
 	$switchNav = "";
 }
-if($general_options[ 'no_nav' ] ) {
+if( (isset($general_options[ 'no_nav' ])) && ($general_options[ 'no_nav' ])) {
 	$fullWidth = " full-content";
 } else {
 	$fullWidth = "";
 }
-$blockedBody = "";
-$blockedBody = $general_options[ 'blocked_body' ];
-if($blockedBody) {
+if( (isset($general_options[ 'blocked_body' ])) && ($general_options[ 'blocked_body' ])) {
 	$blockedBody = " blocked";
+} else {
+	$blockedBody = "";
 }
 $meanThemesGoogleFontHeading = "";
 $meanThemesGoogleFontBody = "";
@@ -62,8 +62,7 @@ if ( $paged >= 2 || $page >= 2 )
 	<link rel="icon" type="image/png" href="<?php echo $general_options['faviconupload'] ? esc_url( $general_options['faviconupload'] ) : ''; ?>" />
 	<link rel="apple-touch-icon-precomposed" href="<?php echo $general_options['appletouchupload'] ? esc_url( $general_options['appletouchupload'] ) : ''; ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=1-2-5" media="all" />
-	<link rel="stylesheet" href="/wp-content/themes/moustachey/style_custo.css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=1-2-9" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
 <?php if( $general_options[ 'google_analytics' ] ) { ?>	
@@ -85,6 +84,11 @@ if ( $paged >= 2 || $page >= 2 )
 <?php } ?>		
 <?php if( $styling_options[ 'adobe_heading_font' ] ) { ?>	
 	<script src="//use.edgefonts.net/<?php echo sanitize_text_field( $styling_options['adobe_heading_font'] ); ?>.js"></script>
+<?php } ?>	
+<?php if( $styling_options[ 'googlefonts_advanced' ] ) { ?>	
+	<script>
+		<?php echo ( $styling_options['googlefonts_advanced'] ); ?>
+	</script>	
 <?php } ?>		
 <?php wp_head(); ?>
 </head>
@@ -111,10 +115,10 @@ if ( $paged >= 2 || $page >= 2 )
 		<header>
 			<div class="wrapper">
 					<div class="logo">
-					<?php if(isset( $general_options[ 'show_strapline' ] )) { ?>
+					<?php if( (isset($general_options[ 'show_strapline' ])) && ($general_options[ 'show_strapline' ])) { ?>
 						<span class="strap-enabled">
 					<?php } ?>
-						<?php if( $general_options[ 'logo_text' ] ) { ?>
+						<?php if( (isset($general_options[ 'logo_text' ])) && ($general_options[ 'logo_text' ])) { ?>
 								<?php if( is_front_page() ) { ?>
 										<span class="site-title">
 											<a href="<?php echo get_home_url(); ?>/" title="<?php _e('Go to Home', 'meanthemes'); ?>"><span><?php bloginfo('name'); ?></span></a>
@@ -149,15 +153,15 @@ if ( $paged >= 2 || $page >= 2 )
 									</span>
 								<?php } ?>
 							<?php } ?>
-						<?php if(isset( $general_options[ 'show_strapline' ] )) { ?>
+						<?php if( (isset($general_options[ 'show_strapline' ])) && ($general_options[ 'show_strapline' ])) { ?>
 							<span class="strap"><?php bloginfo('description'); ?></span>
 						<?php } ?>	
-						<?php if(isset( $general_options[ 'show_strapline' ] )) { ?>
+						<?php if( (isset($general_options[ 'show_strapline' ])) && ($general_options[ 'show_strapline' ])) { ?>
 							</span>
 						<?php } ?>
 					</div><!-- /logo -->
 				<nav>
-					<?php wp_nav_menu( array( 'menu' =>  __('PIMP Menu', 'meanthemes'), 'theme_location' => 'primary', 'container' => false, 'menu_id' => false, 'menu_class' => false ) ); ?>
+					<?php wp_nav_menu( array( 'menu' =>  __('Main Menu', 'meanthemes'), 'theme_location' => 'primary', 'container' => false, 'menu_id' => false, 'menu_class' => false ) ); ?>
 				</nav><!-- /nav -->
 			</div>	
 		</header><!-- /header -->

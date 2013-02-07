@@ -8,7 +8,7 @@
 	Author URI: http://meanthemes.com/
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Version: 1.2.5
+	Version: 1.2.9
 	Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, theme-options, translation-ready
 
 ########################################################################
@@ -1283,6 +1283,14 @@ padding: 0;
 margin: 8px 0 60px 0;
 list-style-type: none;
 }
+.sidebar ul ul { 
+padding-left: 12px; 
+margin-bottom: 8px;
+}
+.sidebar ul ul ul { 
+padding-left: 24px; 
+margin-bottom: 8px;
+}
 .sidebar ul:last-of-type {
 margin-bottom: 20px;
 }
@@ -1467,6 +1475,20 @@ float: left;
 }
 html.left .content, html.left .home-content {
 float: right;
+}
+.author-meta {
+float: left;
+padding-top: 3em;
+border-bottom: 1px solid #eaeaea;
+}
+.author-meta img {
+float: left;
+margin-right: 1.612903225806%;
+border: 1px solid #EAEAE9;
+}
+.author-info {
+float: right;
+width: 82.709677419355%;
 }
 
 /* #######################################################################
@@ -1736,18 +1758,21 @@ color: #939393;
 .format-link a, .navigation a:hover, .flex-next:hover, .flex-prev:hover {
 color: #fff;
 }
-.single .flex-next:hover, .single .flex-prev:hover {
+.single .flex-next:hover, .single .flex-prev:hover,
+p.form-submit input:hover, 
+button:hover, 
+input#searchsubmit:hover {
 color: #2c2c2c;
 }
 .navigation a:hover, .flex-next:hover, .flex-prev:hover {
 text-decoration: underline;
 }
-.format-link p, .format-quote p, .format-aside .time, .single .meta .tag, .single .meta .tag-mini {
+.format-link p, .format-quote p, .format-aside .time, .single .meta .tag, .single .meta .tag-mini, .post-share {
 color: #fff;
 opacity: 0.35; 
 filter: alpha(opacity=30);
 }
-.meta, .meta a, .meta a:hover, .single .meta .tag, .single .meta .tag-mini {
+.meta, .meta a, .meta a:hover, .single .meta .tag, .single .meta .tag-mini, .post-share, .post-share a, .meta .author, .meta .author a {
 color: #474747;
 }
 .single .meta .tag-mini {
@@ -2384,6 +2409,9 @@ min-height: 0;
 .sidebar {
 margin-top: -60px;
 }
+.home-content {
+margin-bottom: 60px;
+}
 }
 @media screen and (max-width: 800px) {
 .article-archive .jp-seek-bar {
@@ -2424,6 +2452,11 @@ margin: 0 auto;
 padding-left: 10%;
 padding-top: 0;
 background-position: 0 0;
+}
+}
+@media screen and (max-width: 768px) {
+.author-meta img {
+width: 11.290322580645%;
 }
 }
 @media screen and (max-width: 620px) {

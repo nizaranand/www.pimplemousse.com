@@ -50,8 +50,24 @@ jQuery.noConflict();
         // Shortcodes (tabs and accordions)
         //
         
-    	jQuery(".mt-tabs").tabs({ fx: { opacity: 'show' } });
+    	// Tabs
+    	jQuery(function () {
+    		jQuery(".mt-tabs").each( function () {
+    		    var tabContainers = jQuery('.tab-inner > div', this);
+    		   
+    		    jQuery(' ul a',this).click(function (e) {
+    			   e.preventDefault();
+    		        tabContainers.hide().filter(this.hash).show();
+    		        
+    		        jQuery(' ul li',this).removeClass('tab-active');
+    		        jQuery(this).parent().addClass('tab-active');
+    		        
+    		        return false;
+    		    }).filter(':first').click();
+    	    });
+    	});	
     	
+    	// Toggles
     	jQuery(".toggle").each( function () {
     		if(jQuery(this).attr('data-id') == 'closed') {
     			jQuery(this).accordion({ header: '.toggle-title', collapsible: true, active: false  });

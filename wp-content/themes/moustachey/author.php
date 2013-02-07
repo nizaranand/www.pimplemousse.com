@@ -7,27 +7,23 @@
 <section class="full-page main" role="main">
 	<div class="wrapper">
 	
-	<?php if($general_options[ 'archive_sidebar' ] ) { ?>
+	<?php if( (isset($general_options[ 'archive_sidebar' ])) && ($general_options[ 'archive_sidebar' ])) { ?>
 		<div class="home-content">
 	<?php } ?>
 	
-		<?php if($general_options[ 'hide_archive_title' ] ) { ?>
+	<?php if( (isset($general_options[ 'hide_archive_title' ])) && ($general_options[ 'hide_archive_title' ])) { ?>
 		
 		<?php } else { ?>
 	
 	<article role="main" class="content searching" id="post-<?php the_ID(); ?>">
 		    <div class="hgroup single-hold">
-		            <h1>
-		            <?php if ( is_day() ) : ?>
-		            				<?php printf( __( "Daily Archives: <span>%s</span>" , "meanthemes" ), get_the_date() ); ?>
-		            <?php elseif ( is_month() ) : ?>
-		            				<?php printf( __( "Monthly Archives: <span>%s</span>" , "meanthemes" ), get_the_date('F Y') ); ?>
-		            <?php elseif ( is_year() ) : ?>
-		            				<?php printf( __( "Yearly Archives: <span>%s</span>" , "meanthemes" ), get_the_date('Y') ); ?>
-		            <?php else : ?>
-		            				<?php _e( "Archives: " , "meanthemes" ); ?><?php echo single_cat_title(); ?>
-		            <?php endif; ?>
-		            			</h1>
+		           <h1 class="searching">
+		           
+		           <?php
+		           $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+		           ?>
+		           <?php echo sanitize_text_field( $content_options['written_by'] ); ?> <span><?php echo $curauth->display_name; ?></span>
+		           </h1>
 		    </div>
 		    </article>
 	<?php } ?>
@@ -57,7 +53,7 @@
 
 	</div>
 	
-	<?php if($general_options[ 'archive_sidebar' ] ) { ?>
+	<?php if( (isset($general_options[ 'archive_sidebar' ])) && ($general_options[ 'archive_sidebar' ])) { ?>
 	
 		
 		<div class="sidebar">

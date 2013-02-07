@@ -22,7 +22,7 @@
         				
         				<?php if($general_options[ 'comments_off' ] ) { ?>
         				<?php } else { ?>
-        				<span class="comment"><?php comments_popup_link( __( '0 Comments','meanthemes' ), __( '1 Comment','meanthemes' ), __( '% Comments','meanthemes' ) ); ?></span><?php _e( ' | ','meanthemes' ); ?>
+        				<span class="comment"><?php comments_popup_link( __( '0 Comments','meanthemes' ), __( '1 Comment','meanthemes' ), __( '% Comments','meanthemes' ) ); ?><?php _e( ' | ','meanthemes' ); ?></span>
         				<?php } ?>
         				
         				<a class="more" href="<?php the_permalink(); ?>" title="<?php the_title(); ?> - <?php echo sanitize_text_field( $content_options['read_more'] ); ?>"><?php echo sanitize_text_field( $content_options['read_more'] ); ?></a></p>

@@ -26,6 +26,7 @@ if(isset($_POST["meanthemes_options"]))
 			"switch_nav" => "",
 			"show_blog_full" => "",
 			"home_sidebar" => "",
+			"archive_sidebar" => "",
 			"no_nav" => "",
 			"comments_off" => "",
 			"show_top_reveal" => "1",
@@ -51,7 +52,9 @@ if(isset($_POST["meanthemes_options"]))
 			"use_admin_date" => "1",
 			"hide_page_menu" => "",
 			"no_thumbnail_gallery" => "",
-			"no_thumbnail" => ""
+			"no_thumbnail" => "",
+			"show_social_share" => "",
+			"show_author" => ""
 		);
 
 		update_option("meanthemes_theme_general_options_moustachey", $defaultOptions);
@@ -109,6 +112,10 @@ if(isset($_POST["meanthemes_options"]))
 			"font_family" => "",
 			"google_heading_font" => "",
 			"google_body_font" => "",
+			"googlefonts_advanced" => "",
+			"googlefonts_advanced_css" => "body { font-family: INSERT YOUR BODY FONT HERE  }
+			
+h1, h2, h3, h4, h5, h6, nav, span.site-title, span.strap, .meta, a.more, .format-link a, .format-link p, .format-quote p, .flex-next, .flex-prev, .navigation, a.url, a.comment-date, .comment-reply, p.form-submit input, .single-quote, button, input#searchsubmit { font-family: INSERT YOUR HEADING FONT HERE }",
 			"typekit_id" => "",
 			"typekit_heading_font" => "",
 			"typekit_body_font" => "",
@@ -142,6 +149,10 @@ if(isset($_POST["meanthemes_options"]))
 			"read_more" => __("Read more", "meanthemes"),
 			"view_post" => __("View post", "meanthemes"),
 			"navigation" => __("Navigation", "meanthemes"),
+			"share_on" => __("Share on: ", "meanthemes"),
+			"written_by" => __("By ", "meanthemes"),
+			"author_more" => __("See more posts by this author", "meanthemes"),		
+			"separator" => __("-", "meanthemes"),
 			"contact_us_tab" => __("Contact us", "meanthemes"),
 			"contact_us_phone" => __("+44123 456789", "meanthemes"),
 			"contact_us_email" => __("themes@meanthemes.com", "meanthemes")

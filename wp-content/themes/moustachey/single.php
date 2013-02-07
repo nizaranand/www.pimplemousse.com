@@ -18,7 +18,25 @@
 								<?php if( get_the_tags() ) { ?>
 									<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 								<?php } ?>
+								<?php if( (is_single()) || (is_page()) ) { ?>
+													<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+								              		<p class="post-share">
+								              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+														<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+														
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+														
+														<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+								
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+								
+														<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+													</p>
+													<?php } ?>
+								              	<?php } ?>
+								              	
 							</div>
+							
 			              	</div>
 			               </div>
 			          <?php } elseif (has_post_format('chat')) { ?>
@@ -34,6 +52,8 @@
 			          	   		<?php } else { ?>
 			          	   			<?php the_time('jS F Y') ?>
 			          	   		<?php } ?></time>
+			          	   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			          	   			<?php } ?>
 			          	   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			          	   		<?php } else { ?>
 			          	   		<?php _e( ' | ','meanthemes' ); ?>
@@ -51,7 +71,24 @@
 								<?php if( get_the_tags() ) { ?>
 									<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 								<?php } ?>
+								<?php if( (is_single()) || (is_page()) ) { ?>
+													<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+								              		<p class="post-share">
+								              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+														<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+														
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+														
+														<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+								
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+								
+														<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+													</p>
+													<?php } ?>
+								              	<?php } ?>
 							</div>
+							
 			             </div>
 			          <?php } elseif (has_post_format('gallery')) { ?>
 			          		
@@ -128,7 +165,8 @@
 			         					   		<?php } else { ?>
 			         					   			<?php the_time('jS F Y') ?>
 			         					   		<?php } ?></time>
-			         					   		<?php _e( ' | ','meanthemes' ); ?>
+			         					   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			         					   			<?php } ?>
 			         					   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			         					   		<?php } else { ?>
 			         					   		<?php _e( ' | ','meanthemes' ); ?>
@@ -146,7 +184,24 @@
 								<?php if( get_the_tags() ) { ?>
 									<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 								<?php } ?>
+								<?php if( (is_single()) || (is_page()) ) { ?>
+													<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+								              		<p class="post-share">
+								              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+														<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+														
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+														
+														<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+								
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+								
+														<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+													</p>
+													<?php } ?>
+								              	<?php } ?>
 							</div>
+							
 			         				 </div>
 			         						
 			          <?php } elseif (has_post_format('image')) { ?>
@@ -172,6 +227,8 @@
 			               			   		<?php } else { ?>
 			               			   			<?php the_time('jS F Y') ?>
 			               			   		<?php } ?></time>
+			               			   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			               			   			<?php } ?>
 			               			   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			               			   		<?php } else { ?>
 			               			   		<?php _e( ' | ','meanthemes' ); ?>
@@ -190,7 +247,24 @@
 			               		 		<?php if( get_the_tags() ) { ?>
 			               		 			<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 			               		 		<?php } ?>
+			               		 		<?php if( (is_single()) || (is_page()) ) { ?>
+			               		 							<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+			               		 		              		<p class="post-share">
+			               		 		              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+			               		 								<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+			               		 								
+			               		 								 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+			               		 								
+			               		 								<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+			               		 		
+			               		 								 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+			               		 		
+			               		 								<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+			               		 							</p>
+			               		 							<?php } ?>
+			               		 		              	<?php } ?>
 			               		 	</div>
+			               		 	
 			               		 </div>
 			               		
 			               	<?php } 
@@ -217,6 +291,8 @@
 			               	   		<?php } else { ?>
 			               	   			<?php the_time('jS F Y') ?>
 			               	   		<?php } ?></time>
+			               	   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			               	   			<?php } ?>
 			               	   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			               	   		<?php } else { ?>
 			               	   		<?php _e( ' | ','meanthemes' ); ?>
@@ -240,7 +316,24 @@
 								<?php if( get_the_tags() ) { ?>
 									<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 								<?php } ?>
+								<?php if( (is_single()) || (is_page()) ) { ?>
+													<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+								              		<p class="post-share">
+								              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+														<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+														
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+														
+														<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+								
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+								
+														<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+													</p>
+													<?php } ?>
+								              	<?php } ?>
 							</div>
+							
 				           </div>    
 			                </div> 
 			                
@@ -255,6 +348,8 @@
 			               	   		<?php } else { ?>
 			               	   			<?php the_time('jS F Y') ?>
 			               	   		<?php } ?></time>
+			               	   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			               	   			<?php } ?>
 			               	   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			               	   		<?php } else { ?>
 			               	   		<?php _e( ' | ','meanthemes' ); ?>
@@ -279,6 +374,8 @@
 			              	   		<?php } else { ?>
 			              	   			<?php the_time('jS F Y') ?>
 			              	   		<?php } ?></time>
+			              	   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			              	   			<?php } ?>
 			              	   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			              	   		<?php } else { ?>
 			              	   		<?php _e( ' | ','meanthemes' ); ?>
@@ -296,7 +393,24 @@
 								<?php if( get_the_tags() ) { ?>
 									<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 								<?php } ?>
+								<?php if( (is_single()) || (is_page()) ) { ?>
+													<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+								              		<p class="post-share">
+								              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+														<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+														
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+														
+														<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+								
+														 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+								
+														<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+													</p>
+													<?php } ?>
+								              	<?php } ?>
 							</div>
+							
 			              </div>
 			              
 			          <?php } elseif (has_post_format('audio')) { ?>
@@ -388,6 +502,8 @@
 			             	   		<?php } else { ?>
 			             	   			<?php the_time('jS F Y') ?>
 			             	   		<?php } ?></time>
+			             	   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+			             	   			<?php } ?>
 			             	   		<?php if($general_options[ 'comments_off' ] ) { ?>
 			             	   		<?php } else { ?>
 			             	   		<?php _e( ' | ','meanthemes' ); ?>
@@ -405,7 +521,24 @@
 			             		<?php if( get_the_tags() ) { ?>
 			             			<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 			             		<?php } ?>
+			             		<?php if( (is_single()) || (is_page()) ) { ?>
+			             							<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+			             		              		<p class="post-share">
+			             		              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+			             								<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+			             								
+			             								 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+			             								
+			             								<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+			             		
+			             								 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+			             		
+			             								<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+			             							</p>
+			             							<?php } ?>
+			             		              	<?php } ?>
 			             	</div>
+			             	
 			             </div>
 			             
 			               
@@ -433,6 +566,8 @@
 								   		<?php } else { ?>
 								   			<?php the_time('jS F Y') ?>
 								   		<?php } ?></time>
+								   		<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+								   			<?php } ?>
 								   		<?php if($general_options[ 'comments_off' ] ) { ?>
 								   		<?php } else { ?>
 								   		<?php _e( ' | ','meanthemes' ); ?>
@@ -451,7 +586,25 @@
 							<?php if( get_the_tags() ) { ?>
 								<p class="tag-mini"><?php the_tags('', ', ', ''); ?></p>
 							<?php } ?>
+							
+							<?php if( (is_single()) || (is_page()) ) { ?>
+												<?php if( (isset($general_options[ 'show_social_share' ])) && ($general_options[ 'show_social_share' ])) { ?>
+							              		<p class="post-share">
+							              			<?php echo sanitize_text_field( $content_options['share_on'] ); ?> 
+													<a target="blank" title="<?php the_title(); ?>" href="http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>" onclick="window.open('http://twitter.com/home?status=<?php the_title(); ?> - <?php the_permalink(); ?>','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-twitter"><?php _e('Twitter' , 'meanthemes'); ?></a>
+													
+													 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+													
+													<a onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="share-google"><?php _e('Google+' , 'meanthemes'); ?></a>
+							
+													 <?php echo sanitize_text_field( $content_options['separator'] ); ?> 
+							
+													<a target="blank" title="<?php the_title(); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="share-facebook"><?php _e('Facebook' , 'meanthemes'); ?></a>
+												</p>
+												<?php } ?>
+							              	<?php } ?>
 						</div>
+						
 						</div>	
 	
 			         <?php } ?>
@@ -460,19 +613,24 @@
 			          
 			        <?php endwhile; ?>
 			        
-			        <?php include_once("single-links.php"); ?>
-			        
-			        <div class="post-about-author">
-  			        <div class="post-author-image preload">
-    			        <?php $author_email =  get_the_author_meta('email'); echo get_avatar( $author_email, $size = '60'); ?>
-    			      </div>
-    			      <div class="post-author-info">
-      			      <h3><?php the_author_posts_link(); ?></h3>
-      			      <p><?php echo get_the_author_meta('description'); ?></p>
-        			  </div>
-        			  <div class="clearfix"></div>
-        		  </div>
-			        
+			        <?php if( is_single() ) { ?>
+			        	<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?>
+			        		<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
+			        							<div class="author-meta single-hold">
+			        									<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 70 ) ); ?>
+			        								<div class="author-info">
+			        									<h6><?php echo sanitize_text_field( $content_options['written_by'] ); ?> 
+			        									
+			        									<a href="<?php the_author_meta('user_url'); ?>" title="<?php the_author_meta('display_name'); ?>"><?php the_author_meta('display_name'); ?></a>
+			        									
+			        									</h6>
+			        									<p><?php the_author_meta( 'description' ); ?></p>
+			        									<p><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php echo sanitize_text_field( $content_options['author_more'] ); ?> </a></p>
+			        								</div>	
+			        							</div>
+			        		<?php endif; ?>
+			        	<?php } ?>	
+			        <?php } ?>
 			        
 			        	    <?php comments_template( '', true ); ?>
 			        

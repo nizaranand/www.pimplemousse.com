@@ -15,7 +15,7 @@ if ( !class_exists('ThemeUpdateChecker') ):
  * 
  * @author Janis Elsts
  * @copyright 2012
- * @version 1.1
+ * @version 1.2
  * @access public
  */
 class ThemeUpdateChecker {
@@ -30,9 +30,9 @@ class ThemeUpdateChecker {
 	/**
 	 * Class constructor.
 	 *
-	 * @param string $theme Theme slug, e.g. 'twentyten'.  
+	 * @param string $theme Theme slug, e.g. "twentyten".
 	 * @param string $metadataUrl The URL of the theme metadata file.
-	 * @param boolean $enableAutomaticChecking Enable/disable automatic udpate checking. If set to FALSE, you'll need to expclicitly call checkForUpdates() to, err, check for updates. 
+	 * @param boolean $enableAutomaticChecking Enable/disable automatic update checking. If set to FALSE, you'll need to explicitly call checkForUpdates() to, err, check for updates.
 	 */
 	public function __construct($theme, $metadataUrl, $enableAutomaticChecking = true){
 		$this->metadataUrl = $metadataUrl;
@@ -83,11 +83,8 @@ class ThemeUpdateChecker {
 		//Various options for the wp_remote_get() call. Themes can filter these, too.
 		$options = array(
 			'timeout' => 10, //seconds
-			'headers' => array(
-				'Accept' => 'application/json'
-			),
 		);
-		$options = apply_filters(self::$filterPrefix.'options-'.$this->theme, array());
+		$options = apply_filters(self::$filterPrefix.'options-'.$this->theme, $options);
 		
 		$url = $this->metadataUrl; 
 		if ( !empty($queryArgs) ){
@@ -119,6 +116,12 @@ class ThemeUpdateChecker {
 	 * @return string Version number.
 	 */
 	public function getInstalledVersion(){
+		if ( function_exists('wp_get_theme') ) {
+			$theme = wp_get_theme($this->theme);
+			return $theme->get('Version');
+		}
+
+		/** @noinspection PhpDeprecationInspection get_themes() used for compatibility with WP 3.3 and below. */
 		foreach(get_themes() as $theme){
 			if ( $theme['Stylesheet'] === $this->theme ){
 				return $theme['Version'];
@@ -145,12 +148,13 @@ class ThemeUpdateChecker {
 		$state->checkedVersion = $this->getInstalledVersion();
 		update_option($this->optionName, $state); //Save before checking in case something goes wrong 
 		
-		$state->update = $this->requestUpdate();
+		$update = $this->requestUpdate();
+		$state->update = ($update instanceof ThemeUpdate) ? $update->toJson() : $update;
 		update_option($this->optionName, $state);
 	}
 	
 	/**
-	 * Run the automatic update check, but no more than once per pageload.
+	 * Run the automatic update check, but no more than once per page load.
 	 * This is a callback for WP hooks. Do not call it directly.  
 	 * 
 	 * @param mixed $value
@@ -175,7 +179,11 @@ class ThemeUpdateChecker {
 		
 		//Is there an update to insert?
 		if ( !empty($state) && isset($state->update) && !empty($state->update) ){
-			$updates->response[$this->theme] = $state->update->toWpFormat();
+			$update = $state->update;
+			if ( is_string($state->update) ) {
+				$update = ThemeUpdate::fromJson($state->update);
+			}
+			$updates->response[$this->theme] = $update->toWpFormat();
 		}
 		
 		return $updates;
@@ -243,8 +251,8 @@ if ( !class_exists('ThemeUpdate') ):
  * A simple container class for holding information about an available update.
  * 
  * @author Janis Elsts
- * @copyright 2011
- * @version 1.0
+ * @copyright 2012
+ * @version 1.1
  * @access public
  */
 class ThemeUpdate {
@@ -276,6 +284,15 @@ class ThemeUpdate {
 		}
 		
 		return $update;
+	}
+
+	/**
+	 * Serialize update information as JSON.
+	 *
+	 * @return string
+	 */
+	public function toJson() {
+		return json_encode($this);
 	}
 	
 	/**

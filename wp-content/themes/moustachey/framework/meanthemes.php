@@ -18,6 +18,7 @@ function meanthemes_install()
 		"switch_nav" => "",
 		"show_blog_full" => "",
 		"home_sidebar" => "",
+		"archive_sidebar" => "",
 		"no_nav" => "",
 		"comments_off" => "",
 		"show_top_reveal" => "1",
@@ -43,7 +44,9 @@ function meanthemes_install()
 		"use_admin_date" => "1",
 		"hide_page_menu" => "",
 		"no_thumbnail_gallery" => "",
-		"no_thumbnail" => ""
+		"no_thumbnail" => "",
+		"show_social_share" => "",
+		"show_author" => ""
 	);
 	$defaultSocial = array(
 		"twitter" => "",
@@ -88,6 +91,10 @@ function meanthemes_install()
 		"font_family" => "",
 		"google_heading_font" => "",
 		"google_body_font" => "",
+		"googlefonts_advanced" => "",
+		"googlefonts_advanced_css" => "body { font-family: INSERT YOUR BODY FONT HERE  }
+		
+h1, h2, h3, h4, h5, h6, nav, span.site-title, span.strap, .meta, a.more, .format-link a, .format-link p, .format-quote p, .flex-next, .flex-prev, .navigation, a.url, a.comment-date, .comment-reply, p.form-submit input, .single-quote, button, input#searchsubmit { font-family: INSERT YOUR HEADING FONT HERE }",
 		"typekit_id" => "",
 		"typekit_heading_font" => "",
 		"typekit_body_font" => "",
@@ -114,6 +121,10 @@ function meanthemes_install()
 		"read_more" => __("Read more", "meanthemes"),
 		"view_post" => __("View post", "meanthemes"),
 		"navigation" => __("Navigation", "meanthemes"),
+		"share_on" => __("Share on: ", "meanthemes"),
+		"written_by" => __("By ", "meanthemes"),
+		"author_more" => __("See more posts by this author", "meanthemes"),		
+		"separator" => __("-", "meanthemes"),
 		"contact_us_tab" => __("Contact us", "meanthemes"),
 		"contact_us_phone" => __("+44123 456789", "meanthemes"),
 		"contact_us_email" => __("themes@meanthemes.com", "meanthemes")
@@ -300,6 +311,10 @@ function meanthemes_initialize_theme_options() {
 	add_settings_field("no_thumbnail_gallery", __('Disabled featured image on Gallery posts', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_global_section", array("name"=>"no_thumbnail_gallery", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Tick to hide featured image on gallery posts.', 'meanthemes'), "explanation" => ""));
 	add_settings_field("no_thumbnail", __('Disabled featured image on all posts (not gallery)', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_global_section", array("name"=>"no_thumbnail", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Tick to hide featured image on all posts (not pages or gallery posts).', 'meanthemes'), "explanation" => ""));
 	
+	add_settings_field("show_social_share", __('Show social share', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_global_section", array("name"=>"show_social_share", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Share any post to Twitter, Facebook and Google+.', 'meanthemes'), "explanation" => ""));
+	
+	add_settings_field("show_author", __('Show Author information', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_global_section", array("name"=>"show_author", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Tick to show author information on the whole theme.', 'meanthemes'), "explanation" => ""));
+	
 	
 		
 	
@@ -318,7 +333,11 @@ function meanthemes_initialize_theme_options() {
 	
 		add_settings_field("home_sidebar", __('Turn on Side Navigation on homepage', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_homepage_section", array("name"=>"home_sidebar", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Tick to turn on side navigation on the homepage only.', 'meanthemes'), "explanation" => ""));
 
+add_settings_section('general_settings_archive_section', __('Archive page settings', 'meanthemes'), 'meanthemes_general_archive_options_callback', 'meanthemes_theme_general_options_moustachey');
 
+	add_settings_field("archive_sidebar", __('Turn on Side Navigation on archive pages', 'meanthemes'), "meanthemes_checkbox", "meanthemes_theme_general_options_moustachey", "general_settings_archive_section", array("name"=>"archive_sidebar", "settings" => "meanthemes_theme_general_options_moustachey", "label" => __('Tick to turn on side navigation on all archive pages.', 'meanthemes'), "explanation" => ""));
+	
+	
 	add_settings_section('general_settings_contact_section', __('Contact page settings', 'meanthemes'), 'meanthemes_general_contact_options_callback', 'meanthemes_theme_general_options_moustachey');
 	add_settings_field("emailaddress", __('Contact Form Email Address', 'meanthemes'), "meanthemes_text", "meanthemes_theme_general_options_moustachey", "general_settings_contact_section", array("name"=>"emailaddress", "settings" => "meanthemes_theme_general_options_moustachey" , "explanation" => "" , "class" => ""));
 	add_settings_field("googleapikey", __('Google API Key', 'meanthemes'), "meanthemes_text", "meanthemes_theme_general_options_moustachey", "general_settings_contact_section", array("name"=>"googleapikey", "settings" => "meanthemes_theme_general_options_moustachey" , "explanation" => "You'll need to register and setup an API key through Google maps.", "class" => ""));
@@ -355,7 +374,10 @@ function meanthemes_general_homepage_options_callback() {
 	$textcontent = __('Change settings specifically for the homepage and static blog layout page.', 'meanthemes');
 	echo '<p class="advice">'.$textcontent.'</p>';
 }
-
+function meanthemes_general_archive_options_callback() {
+	$textcontent = __('Change settings specifically for the archive pages.', 'meanthemes');
+	echo '<p class="advice">'.$textcontent.'</p>';
+}
 function meanthemes_general_images_options_callback() {
 	$textcontent = __('Upload your website logo, Apple Touch icon and Favicon. If you\'d like to crop or resize your images after they have uploaded, head over to the "Media" area where you can crop your images, make sure you come back here though and reselect your newly cropped image and click Save at the bottom.', 'meanthemes');
 	echo '<p class="advice">'.$textcontent.'</p>';
@@ -471,6 +493,12 @@ function meanthemes_theme_initialize_styling_options() {
 
 	add_settings_field("google_body_font", __('Main Content', 'meanthemes'), "meanthemes_text", "meanthemes_theme_styling_options_moustachey", "styling_options_googlefonts_section", array("name"=>"google_body_font", "settings" => "meanthemes_theme_styling_options_moustachey" , "explanation" => "", "class" => "small"));
 	
+	add_settings_section('styling_options_googlefonts_advanced_section', __('Google Web fonts (Advanced)', 'meanthemes'), 'meanthemes_styling_googlefonts_advanced_options_callback', 'meanthemes_theme_styling_options_moustachey', 'meanthemes');
+	
+	add_settings_field("googlefonts_advanced", __('Google Webfont JavaScript', 'meanthemes'), "meanthemes_textarea", "meanthemes_theme_styling_options_moustachey", "styling_options_googlefonts_advanced_section", array("name"=>"googlefonts_advanced", "settings" => "meanthemes_theme_styling_options_moustachey" , "explanation" => "", "class" => ""));
+	add_settings_field("googlefonts_advanced_css", __('Font Control CSS Block', 'meanthemes'), "meanthemes_textarea", "meanthemes_theme_styling_options_moustachey", "styling_options_googlefonts_advanced_section", array("name"=>"googlefonts_advanced_css", "settings" => "meanthemes_theme_styling_options_moustachey" , "explanation" => "", "class" => ""));
+	
+	
 	
 	add_settings_section('styling_options_typekitfonts_section', __('Typekit Web fonts', 'meanthemes'), 'meanthemes_styling_typekitfonts_options_callback', 'meanthemes_theme_styling_options_moustachey', 'meanthemes');
 	
@@ -536,7 +564,12 @@ function meanthemes_styling_fontsize_options_callback() {
 	echo '<p class="advice">'.$textcontent.'</p>';
 }
 function meanthemes_styling_googlefonts_options_callback() {
-	$textcontent = __('If you\'d like to use a Google Web font, all you need to do is go to <a href="http://www.google.com/webfonts/" title="Visit Google Webfonts (will open in separate window)" target="_blank">Google Web fonts</a>, choose the font you\'d like to use and enter the name of the font in the boxes below. For example: Lato. We\'ll do the rest. <strong>Please only enter one font per option.</strong>', 'meanthemes');
+	$textcontent = __('If you\'d like to use a Google Web font, all you need to do is go to <a href="http://www.google.com/webfonts/" title="Visit Google Webfonts (will open in separate window)" target="_blank">Google Web fonts</a>, choose the font you\'d like to use and enter the name of the font in the boxes below. For example: Lato. We\'ll do the rest. <strong>Please only enter one font per option.</strong>. If you want even more control over your Google fonts, use the advanced option below.', 'meanthemes');
+	echo '<p class="advice">'.$textcontent.'</p>';
+}
+
+function meanthemes_styling_googlefonts_advanced_options_callback() {
+	$textcontent = __('This is the advanced version of Google web fonts, the standard version above does not allow for different font weights or more than two fonts. Go to <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>, choose your fonts by clicking "Add to collection" and then click "Use". Scroll down to point 3, "Javascript" tab in the blue block and grab the code. Insert that code into the "Google Webfont JavaScript" box below and enter the CSS for the Google font in the "Font Control CSS Block" below. <strong>Please make sure you clear the standard Google Fonts above.</strong>', 'meanthemes');
 	echo '<p class="advice">'.$textcontent.'</p>';
 }
 
@@ -585,6 +618,12 @@ function meanthemes_theme_initialize_content_options() {
 	add_settings_field("donate_details", __('Donate Details', 'meanthemes'), "meanthemes_textarea", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"donate_details", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => ""));
 	add_settings_field("donate_link", __('Donate Link URL', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"donate_link", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "Please enter full URL including http://", "class" => ""));
 	add_settings_field("donate_link_text", __('Donate Link Text', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"donate_link_text", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => ""));
+	add_settings_field("separator", __('Separator text', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"separator", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => "small"));
+	add_settings_field("share_on", __('"Share on: " text', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"share_on", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => "small"));
+	
+	add_settings_field("written_by", __('"By " text', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"written_by", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => "small"));
+	add_settings_field("author_more", __('"See more posts by this author" text', 'meanthemes'), "meanthemes_text", "meanthemes_theme_content_options_moustachey", "content_options_more_section", array("name"=>"author_more", "settings" => "meanthemes_theme_content_options_moustachey" , "explanation" => "", "class" => "small"));
+	
 	
 
 	add_settings_section('content_options_contact_page_section', __('Contact', 'meanthemes'), 'meanthemes_content_contact_page_options_callback', 'meanthemes_theme_content_options_moustachey', 'meanthemes');

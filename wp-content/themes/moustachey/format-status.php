@@ -13,6 +13,8 @@
         				<?php } else { ?>
         					<?php the_time('jS F Y') ?>
         				<?php } ?></time>
+        				<?php if( (isset($general_options[ 'show_author' ])) && ($general_options[ 'show_author' ])) { ?><span class="author"><?php echo sanitize_text_field( $content_options['written_by'] ); ?> <?php the_author_posts_link(); ?></span>
+        					<?php } ?>
         				</p>
         		  </div>
         	</div>	

@@ -46,8 +46,8 @@ $homeShow = sanitize_text_field( $general_options['home_amount'] );
 		endif;
 		?>
 <?php
-	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-	query_posts("" . '&paged=' . $paged);
+	$paged = get_query_var('paged');
+	query_posts('cat=-0&paged='.$paged);
 ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
 		<div class="navigation">

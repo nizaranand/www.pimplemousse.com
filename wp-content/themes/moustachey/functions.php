@@ -31,6 +31,7 @@ add_image_size( 'single-thumb', 660, 9999, false );
 add_image_size( 'archive-thumb', 940, 9999, false );
 add_image_size( 'standard-thumb', 940, 9999, false );
 add_image_size( 'fullwidth-thumb', 940, 9999, false );
+add_image_size( 'rss-thumb', 330, 9999, false );
 
 /* #######################################################################
 
@@ -289,7 +290,7 @@ function post_comments( $comment, $args, $depth ) {
 		<div class="comment-body">
 			<p><?php comment_author_link(); ?>
 			<a class="comment-date" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
-				<?php comment_date('jS F Y'); _e(' at ','meanthemes'); comment_time('H:i'); ?></a><?php edit_comment_link( __( '(Edit)', 'meanthemes' ), ' ' ); ?></p>
+				<?php comment_date(); _e(' at ','meanthemes'); comment_time(); ?></a><?php edit_comment_link( __( '(Edit)', 'meanthemes' ), ' ' ); ?></p>
 			<div class="comment-text"><?php comment_text(); ?></div>
 			
 		<div class="comment-reply">
@@ -648,9 +649,21 @@ add_filter( 'tiny_mce_before_init', 'themeit_tiny_mce_before_init' );
 function add_thumb_to_RSS($content) {
 	global $post;
 	if ( has_post_thumbnail( $post->ID ) ){
-	$content = '<div>' . get_the_post_thumbnail( $post->ID, 'thumbnail' ) . '</div>' . $content;
+	$content = '<div>' . get_the_post_thumbnail( $post->ID, 'rss-thumb' ) . '</div>' . $content;
 	}
-	return $content;
+	if ( (get_post_meta($post->ID, 'single_format_audio', true)) || (get_post_meta($post->ID, 'single_format_audio_oga', true)) ) {
+	$meta = '<p><strong>' . __('Audio Link(s): ', 'meanthemes'). '</strong><p>' . get_post_meta($post->ID, 'single_format_audio', true) . '</p><p>' . get_post_meta($post->ID, 'single_format_audio_oga', true) . '</p>';
+	}
+	if ( get_post_meta($post->ID, 'single_format_video', true) ) {
+	$meta = '<p><strong>' . __('Video Post', 'meanthemes') . '</strong></p>';
+	}
+	if ( get_post_meta($post->ID, 'single_format_link_url', true) ) {
+	$meta = '<p><strong>' . __('Link Post: ', 'meanthemes') . '</strong>' . get_post_meta($post->ID, 'single_format_link_url', true) . '</p><p>' . '<p><strong>' . __('Link Text: ', 'meanthemes') . '</strong>' . get_post_meta($post->ID, 'single_format_link_text', true) . '</p>';
+	}
+	if ( get_post_meta($post->ID, 'single_format_quote', true) ) {
+	$meta = '<p><strong>' . __('Quote Source: ', 'meanthemes') . '</strong>' . get_post_meta($post->ID, 'single_format_quote', true) . '</p>';
+	}
+	return $content . $meta;
 }
 add_filter('the_excerpt_rss', 'add_thumb_to_RSS');
 add_filter('the_content_feed', 'add_thumb_to_RSS');
